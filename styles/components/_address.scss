@@ -1,0 +1,107 @@
+.address{
+    &__right{
+        margin-left: 28px;
+        width: 74%;
+        @include media(580){
+            margin-left: 0px;
+        }
+        @include media(580){
+            margin-top: 30px;
+            width: 100%;
+        }
+    }
+    &__subtitle{
+        font-family: 'Cera Pro';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 107%;
+        color: #727272;
+        margin: 10px 0px;
+    }
+    &__input{
+        margin-top: 20px;
+        width: 48%;
+        @include media(890){
+            width: 100%;
+        }
+        & input{
+            width: 100%;
+            min-height: 40px;
+            padding: 12px 14px;
+            margin: 10px 0px;
+            border: 1px solid #EAEAEA;
+            border-radius: 3px;
+            outline: none;
+
+        }
+    }
+    &__save{
+        font-family: 'Cera Pro';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 114%;
+        color: #FFFFFF;
+        background: #46A358;
+        border-radius: 3px;
+        padding: 12px 24px;
+        margin: 40px 0px 60px 0px;
+    }
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+        @include media(890){
+            flex-direction: column;
+        }
+        &_right{
+            display: flex;
+            justify-content: space-between;
+            @include media(890){
+                margin-top: 20px;
+            }
+        }
+        &_input{
+            display: flex;
+            align-items: center;
+            & input{
+                background-color: #46A358;
+            }
+            & p{
+                font-family: 'Cera Pro';
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 114%;
+                color: #3D3D3D;
+                margin-left: 8px;
+            }
+        }
+        &_button{
+            font-family: 'Cera Pro';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 100%;
+            color: #46A358;
+            background-color: #FFFFFF;
+            @include adaptive-value("margin-left", 60,10,1)
+        }
+    }
+    &__personal_form{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.apartment{
+    margin-top: 34px;
+}
+
+.address__input{
+    &.invalid{
+        & .error{
+            display: block;
+        }
+        & input{
+            border-color: red;
+        }
+    }
+}

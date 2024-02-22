@@ -1,0 +1,53 @@
+.product_description{
+    margin-bottom: 127px;
+    &_title{
+        display: flex;
+        font-family: 'Cera Pro';
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 94%;
+        color: #3D3D3D;
+        margin: 98px 0px 0px 0px;
+        & :not(:last-child){
+            margin-right: 30px;
+        }
+        
+        & p{
+            padding-bottom: 13px;
+            &:hover{
+                color: #46A358;
+                font-weight: 700;
+                border-bottom: 3px solid #46A358;
+             }
+        }
+        & .products_active{
+            color: #46A358;
+            font-weight: 700;
+            border-bottom: 3px solid #46A358;
+        }
+    }
+    & hr{
+        border: 0.1px solid rgba(70, 163, 89, 0.237);
+        margin-bottom: 18px;
+    }
+    &_body{
+        & :not(:last-child){
+            margin-bottom: 18px;
+        }
+    }
+    &_text{
+        font-family: 'Cera Pro';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 171%;
+        color: #3D3D3D;
+    }
+    &_subtext{
+        font-family: 'Cera Pro';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 171%;
+        color: #727272;
+    }
+}
+

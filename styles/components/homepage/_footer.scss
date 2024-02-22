@@ -1,0 +1,110 @@
+.footer{
+    &__address{
+        display: flex;
+        justify-content: space-between;
+        background: rgba(70, 163, 88, 0.1);
+        align-items: center;
+        padding: 22px 0px;
+        border-bottom: 1px solid  #46a35943;
+        border-top: 1px solid #46a35943;
+        margin-bottom: 33px;
+        @include adaptive-value("padding-left",25,10,1);
+        @include adaptive-value("padding-right",25,10,1);
+        @include media(800){
+            flex-wrap: wrap;
+            padding-bottom: 0;
+            padding-top: 15px;
+        }
+        &_block{
+            display: flex;
+            align-items: center;
+            width: 25%;
+            @include media(800){
+                width: 50%;
+                margin-bottom: 15px;
+            }
+            @include media(350){
+                // width: 100%;
+            }
+        }
+        &_logo img{
+            @include adaptive-value("width", 150, 100,1);      
+            @include adaptive-value("height", 37, 32,1);     
+        }
+        &_icon{
+            @include adaptive-value("margin-right", 12, 5,1);
+        }
+    }
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 27px;
+        @include media(650){
+            flex-wrap: wrap;
+        }
+        &_block{
+            display: flex;
+            flex-direction: column;
+        }
+        &_socials{
+            @include media(650){
+                width: 100%;
+                margin-top: 30px;
+            }
+        }
+        &_title{
+            font-family: 'Cera Pro';
+            font-weight: 700;
+            line-height: 89%;
+            color: #3D3D3D;
+            margin-bottom: 8px;
+            @include adaptive-value("font-size", 18, 14,1);
+        }
+        &_icons{
+            margin: 20px 0px 32px 0px;
+            & a{
+                padding: 7px;
+                border: 1px solid rgba(70, 163, 88, 0.2);
+                border-radius: 4px;
+                & img{
+                    min-width: 16px;
+                    max-height: 16px;
+                    object-fit: contain;
+                }
+            }
+            & :not(:last-child){
+                margin-right: 10px;
+            }
+        }
+        &_accepted{
+            margin-top: 12px;
+        }
+    }
+    &__links a{
+        font-family: 'Cera Pro';
+        font-weight: 400;
+        line-height: 214%;
+        color: #3D3D3D;
+        @include adaptive-value("font-size", 14,11,1);
+
+    }
+    & hr{
+        height: 1px;
+        width: 100%;
+        background: rgba(70, 163, 88, 0.2);
+    }
+    &__bottom{
+        font-family: 'Cera Pro';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 214%;
+        color: #3D3D3D;
+        height: 50px;
+        text-align: center;
+        margin-top: 7px;
+        @include media(650){
+            font-size: 12px;
+            height: 40px;
+        }
+    }
+}

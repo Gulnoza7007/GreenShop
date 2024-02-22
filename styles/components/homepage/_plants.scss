@@ -1,0 +1,378 @@
+.plants{
+    margin-top: 46px;
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__selection{
+        width: 250px;
+
+        display: flex;
+        flex-direction: column;
+        background: #FBFBFB;
+        padding: 14px 18px 0px 18px;
+
+    }
+    &__price{
+        margin: 36px 0px;
+    }
+
+    &__categories{
+        &_title{
+            font-family: 'Cera Pro';
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 16px;
+            color: #3D3D3D;
+            margin-bottom: 8px;
+        }
+        &_list{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 12px;
+            color: $black3D;
+            font-family: 'Cera Pro';
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 267%;
+            &:hover p{
+                color: $green4;
+                font-weight: 700;
+            }
+        }
+        &_image{
+            width: 250px;
+            height: 100%;
+            margin-top: 30px;
+            margin-left: -18px;
+            & img{
+                width: 294px;
+                height: 100%;
+                margin-left: -20px;
+                background: url(image.png);
+                mix-blend-mode: multiply;
+            }
+        }
+        &_filter{
+            font-family: 'Cera Pro';
+            padding: 8px 26px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 125%;
+            color: #FFFFFF;
+            margin-top: 20px;
+            background-color: $green4;
+            border-radius: 6px;
+        }
+    }
+    &__right{
+        width: 73%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    &__content{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap:70px 0px;
+    }
+    &__block{
+        width: 31%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        &_icons{
+            display: none;
+            position: absolute;
+            width: 50%;
+            left: 25%;
+            bottom: 60px;
+            & :not(:last-child){
+                margin-right: 20px;
+            }
+        }
+        &:hover{
+            border-top: 1.5px solid $green4;
+            margin-top: -1.5px;
+        }
+        &:hover .plants__block_icons{
+            display: block;
+        }
+        &_image{
+            margin-bottom: 12px;
+            width: 100%;
+            background: #FBFBFB;
+
+            @include adaptive-value("height",300,200,1);
+            @include adaptive-value("padding-top",20,1,1);
+            
+            & img{
+                width: 100%;
+                height: 90%;
+                object-fit: contain;
+                background: url(image.png);
+                mix-blend-mode: multiply;
+            }
+        }
+        &_text{
+            font-family: 'Cera Pro';
+            font-weight: 400;
+            line-height: 100%;
+            color: #3D3D3D;
+            margin-bottom: 6px;
+            @include adaptive-value("font-size", 16, 14,1);
+
+        }
+        &_price{
+            font-family: 'Cera Pro';
+            font-weight: 700;
+            line-height: 89%;
+            color: #46A358;
+            @include adaptive-value("font-size", 18, 14,1);
+        }
+    }
+    &__text{
+        font-family: 'Cera Pro';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 107%;
+        color: #3D3D3D;
+    }
+    &__filter{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        &_left{
+            display: flex;
+        }
+        & .plants__filter_new, .plants__filter_sale{
+            margin-right: 35px;
+            background-color: #FFFFFF;
+            font-family: 'Cera Pro';
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 107%;
+            color: #3D3D3D;
+            padding-bottom: 9px;
+            &:hover{
+                color: $green4;
+                font-weight: 700;
+                border-bottom:2px solid #46A358;
+                padding-bottom: 7px;
+
+            }
+        }
+        &_all{
+            margin-right: 35px;
+            background-color: #FFFFFF;
+            font-family: 'Cera Pro';
+            font-size: 15px;
+            line-height: 107%;
+            padding-bottom: 9px;
+            color: $green4;
+            font-weight: 700;
+            border-bottom:2px solid #46A358;
+            padding-bottom: 7px;
+        }
+
+    }
+    &__filter_condition{
+        display: flex;
+        & select{
+            width: 140px;
+            padding: 0px 0px 0px 10px;
+            border: none;
+            outline: none;
+            background: transparent;
+            cursor: pointer;
+            font-family: 'Cera Pro';
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 16px;
+            color: #3D3D3D;
+            margin-top: -6px;
+        }
+    }
+    &__shopping{
+        padding: 5px;
+        & svg{
+            fill: #3D3D3D;
+            & :hover{
+                fill: #46A358;
+            }
+            &.green{
+                fill: #46A358;
+            }
+        }
+    }
+    &__like{
+        padding: 5px;
+        & svg{
+            fill: #3D3D3D;
+            & :hover{
+                fill: #46A358;
+            }
+        }
+    }
+    &__search{
+        padding: 5px;
+        & svg{
+            fill: #3D3D3D;
+            & :hover{
+                fill: #46A358;
+            }
+        }
+    }
+    &__pagination{
+        width: 100%;
+        display: flex;
+        margin-top: 90px;
+        position: relative;
+        &_block{
+        display: flex;
+        position: absolute;
+        right: 35px;
+    }
+    }
+    &__number{
+        padding: 9px 12px;
+        font-family: 'Cera Pro';
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 89%;
+        color: #3D3D3D;
+        border: 1px solid #E5E5E5;
+        border-radius: 4px;
+        background-color: #FFFFFF;
+        width: 35px;
+        margin-right: 10px;
+        &:hover{
+            background-color: #46A358;
+            color: #FFFFFF;
+            font-weight: 700;
+            border: none;
+        }
+        &.active{
+            background-color: #46A358;
+            color: #FFFFFF;
+            font-weight: 700;
+            border: none;
+        }
+    }
+    &__next{
+        padding: 12px 13px;
+        width: 35px;
+        height: 35px;
+        background:transparent;
+        border-radius: 4px;
+        border: 1px solid #E5E5E5;
+        position: absolute;
+        right: 0;
+        &:hover{
+            background-color: #46A358;
+            border: none;
+        }
+        &.rotate{
+            transform: rotate(180deg);
+        }
+    }
+    
+}
+
+.filter-price > div {
+    display: block;
+    width: 218px;
+    height: 36px;
+    padding: 16px 21px;
+    box-sizing: border-box;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+}
+
+.filter-price{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.double-bar {
+    display: block;
+    width: 176px;
+    height: 4px;
+
+    background-color: rgba(70, 163, 88, 0.2);
+    border-radius: 30px;
+}
+
+.double-bar .white-part {
+    display: flex;
+    justify-content: space-between;
+    height: 4px;
+
+    background-color: $green4;
+}
+
+.double-bar .point {
+    width: 4px;
+    height: 4px;
+    margin-top: -6px;
+
+    background-color: green;
+    border: 8px solid $green4;
+    border-radius: 50%;
+}
+
+.double-bar .point:first-child {
+    margin-left: -8px;
+}
+
+.double-bar .point:last-child {
+    margin-right: -8px;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.sort{
+    background-color: white;
+    margin-left: 8px;
+    margin-top: -4px;
+}
+
+.discount{
+    position: relative;
+    &__text{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #46A358;
+        color: #FFFFFF;
+        padding: 7px 9px;
+        font-family: 'Cera Pro';
+        font-weight: 500;
+        line-height: 100%;
+        @include adaptive-value("font-size", 16, 12,1);
+    }
+}
+
+.default__block{
+    display: block;
+    &.closeBlock{
+        display: none;
+    }
+}
+
+.next__block{
+    display: none;
+    &.openBlock{
+        display: block;
+    }
+}

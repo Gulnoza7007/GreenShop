@@ -1,0 +1,151 @@
+.welcome{
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8px;
+        border-radius: 10px;
+        background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
+        z-index: 20;
+        @include media(900){
+            background: rgba(70, 163, 88, 0.26); 
+            border-radius: 35px;
+            overflow: hidden;
+            z-index: 20;
+            margin-top: 20px;
+            // &::before{
+            //     content: "";
+            //     background: linear-gradient(160.25deg, rgba(255, 255, 255, 0.43) 22.1%, rgba(70, 163, 88, 0.04) 87.42%);
+            //     position: absolute;
+            //     border-radius: 200px;
+            //     @include adaptive-value("width", 700, 248,1);
+            //     @include adaptive-value("height", 700, 248,1);
+            //     left: -100px;
+            //     top: -30px;
+            //     z-index: -1;
+            // }
+            // &::after{
+            //     content: "";
+            //     background: linear-gradient(160.25deg, rgba(255, 255, 255, 0.37) 22.1%, rgba(70, 163, 88, 0) 87.42%);
+            //     position: absolute;
+            //     border-radius: 200px;
+            //     @include adaptive-value("width", 700, 248,1);
+            //     @include adaptive-value("height", 700, 248,1);
+            //     right: -50px;
+            //     top: -30px;
+            //     z-index: 0;
+            // }
+        }
+    }
+    &__content{
+        padding: 68px 0px 68px 43px;
+        width: 57%;
+
+        @include media(1100){
+            padding: 38px 0px 38px 45px;
+        }
+
+        @include media(570){
+            width: 70%;
+            padding: 30px 0px 30px 25px;
+        }
+    }
+    &__suptitle{
+        font-family: 'Cera Pro';
+        font-weight: 500;
+        line-height: 114%;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $black3D;
+        @include adaptive-value("font-size", 14, 10, 1)
+    }
+    &__title{
+        font-family: 'Cera Pro';
+        font-weight: 900;
+        line-height: 100%;
+        color: $black3D;
+        text-transform: uppercase;
+        margin: 7px 0px 5px 0px;
+
+        @include adaptive-value("font-size", 70,20,1)
+    }
+    &__subtitle{
+        font-family: 'Cera Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 171%;
+        color: $black72;
+        max-width: 85%;
+        @include media(800){
+            font-size: 12px;
+            & span{
+                display: none;
+            }
+        }
+    }
+    &__button{
+        font-family: 'Cera Pro';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 125%;
+        color: white;
+        background-color: $green4;
+        border-radius: 6px;
+        padding: 11px 27px 9px 26px;
+        margin-top: 44px;
+        cursor: pointer;
+        @include media(900){
+           background-color: rgba(255, 255, 255, 0);
+           color: $green4;
+           margin-right: 6px;
+           padding: 0;
+           margin-top: 30px;
+           font-size: 12px;
+        }
+        @include media(500){
+            margin-top: 10px;
+        }
+        & span svg{
+            @include mediaMobileFirst(900){
+                display: none;
+            }
+        }
+    }
+    &__image{
+        width: 43%;
+        position: relative;
+        margin-bottom: 40px;
+        @include adaptive-value("height", 450, 200,1);
+
+        &_big{
+            position: absolute;
+            bottom: -38px;
+            @include adaptive-value("width", 518, 183,1);
+            @include adaptive-value("height", 518, 183,1);
+            & img{
+                width: 100%;
+                height: 100%;
+            }
+            @include media(800){
+                bottom: -13px;
+            }
+        }
+
+        &_small img{
+            position: absolute;
+            bottom: 0;
+            left: 10px;
+            @include adaptive-value("width", 135, 62,1);
+            @include adaptive-value("height", 135, 62,1);
+        }
+        @include media(570){
+            margin-top: -40px;
+            margin-right: 20px;
+            margin-left: -30px;
+        }
+    }
+}
+
+.swiper-pagination-bullet{
+     background-color: $green4 !important;
+}

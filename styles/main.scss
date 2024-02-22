@@ -1,0 +1,23 @@
+@import "./global/normalize";
+@import "./global/variebles";
+@import "./fonts/stylesheet.css";
+
+@import "./mixins/media-mixins";
+@import "./mixins/mini-mixin";
+@import "./mixins/mixins";
+
+@import "./global/setting";
+
+@import "./components/homePage/header";
+@import "./components/homePage/welcome";
+@import "./components/homePage/plants";
+@import "./components/homePage/examples";
+@import "./components/homePage/blogposts";
+@import "./components/homePage/join";
+@import "./components/homePage/footer";
+@import "./components/shop/products";
+@import "./components/shop/related";
+@import "./components/login/loginORreg";
+@import "./components/account";
+@import "./components/address";
+@import "./components/shop/selected"

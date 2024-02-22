@@ -1,0 +1,287 @@
+.account{
+    &__container{
+        display: flex;
+        @include adaptive-value("margin-top", 46, 25, 1);
+        @include adaptive-value("margin-bottom", 200, 80, 1);
+        @include media(580){
+            flex-direction: column;
+        }
+    }
+    &__myAccount{
+        padding: 18px 18px 18px 0px;
+        box-sizing: content-box;
+        width: 25%;
+        min-width: 180px;
+        @include media(580){
+            width: 100%;
+        }
+        &_title{
+            font-family: 'Cera Pro';
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 89%;
+            color: #3D3D3D;
+            padding: 17px 0px 17px 18px;
+            background: #FBFBFB;
+
+        }
+        & hr{
+            width: 100%;
+            border: 0.3px solid rgba(70, 163, 89, 0.247);
+        }
+    }
+    &__lines{
+        display: flex;
+        padding-left:18px;
+        align-items: center;
+        background: #FBFBFB;
+
+        &:hover{
+        border-left: 5px solid $green4;
+        padding-left: 14px;
+        background-color: white;
+           & p{
+            color: $green4;
+            font-weight: 700;
+           }
+           & svg{
+            stroke: $green4;
+           }
+        }
+        &_text{
+            font-family: 'Cera Pro';
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 300%;
+            color: #727272;
+            
+        }
+        &_logout{
+            font-family: 'Cera Pro';
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 300%;
+            color: $green4;
+        }
+    }
+    
+    &__icon{
+        margin-right: 10px;
+    }
+    &__title{
+        font-family: 'Cera Pro';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 100%;
+        color: #3D3D3D;
+    }
+    &__right{
+        display: flex;
+        flex-direction: column;
+        margin-left: 28px;
+        width: 75%;
+        @include media(580){
+            width: 95%;
+        }
+    }
+    &__input{
+        margin-top: 20px;
+        width: 48%;
+        @include media(980){
+            width: 500px;
+        }
+        @include media(980){
+            width: 100%;
+        }
+        & input{
+            width: 100%;
+            min-height: 40px;
+            padding: 12px 14px;
+            margin: 10px 0px;
+            border-radius: 3px;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+            border: 1px solid #EAEAEA;
+        }
+        &_text{
+            font-family: 'Cera Pro';
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 100%;
+            color: #3D3D3D;
+        }
+    }
+    &__personal_form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    &__flex{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__profile{
+        margin-top: 20px;
+        width: 48%;
+
+
+    }
+    &__button{
+        &_change{
+            padding: 12px 24px;
+            font-family: 'Cera Pro';
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 114%;
+            color: #FFFFFF;
+            background-color: $green4;
+            max-height: 40px;
+            border-radius: 3px;
+            margin: 5px 22px;
+        }
+        &_remove{
+            padding: 12px 24px;
+            font-family: 'Cera Pro';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 114%;
+            color: #3D3D3D;
+            background-color: #fff;
+            max-height: 40px;
+        }
+    }
+    &__save_change{
+        font-family: 'Cera Pro';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 114%;
+        color: #FFFFFF;
+        background-color: $green4;
+        border-radius: 3px;
+        border: none;
+        cursor: pointer;
+        padding: 12px 23px;
+        margin-top: 40px;
+        max-width: 140px;
+    }
+    &__password{
+        margin-top: 30px;
+    }
+    &__number_beginning{
+        width: 22%;
+        min-width: 60px;
+        background-color: #fff;
+        border: 1px solid #EAEAEA;
+        margin: 10px 5px 10px 0px;
+    }
+}
+
+.svg_stroke{
+    stroke: #727272;
+}
+
+.account_active{
+    border-left: 5px solid $green4;
+    background-color: #fff;
+}
+
+
+
+.password__eye{
+    position: relative;
+    &_open{
+        position: absolute;
+        right: 15px;
+        top: 25px;
+        display: none;
+
+    }
+    &_closed{
+        position: absolute;
+        right: 15px;
+        top: 25px;
+    }
+}
+
+.account__name_empty{
+    &.invalid{
+        display: block;
+    }
+}
+
+.account__input{
+    &.invalid{
+        & .error{
+            display: block;
+        }
+        & input{
+            border-color: red;
+        }
+    }
+}
+
+
+
+.Eye_show{
+    display: none;
+    & img{
+        width: 20px;
+        height: 20px;
+    }
+    &.openEye{
+        display: block;
+    }
+}
+
+.Eye_hide{
+    display: block;
+    &.closedEye{
+        display: none;
+    }
+}
+
+.Eye_show1{
+    display: none;
+    & img{
+        width: 20px;
+        height: 20px;
+    }
+    &.openEye{
+        display: block;
+    }
+}
+
+.Eye_hide1{
+    display: block;
+    &.closedEye{
+        display: none;
+    }
+}
+
+.Eye_show2{
+    display: none;
+    & img{
+        width: 20px;
+        height: 20px;
+    }
+    &.openEye{
+        display: block;
+    }
+}
+
+.Eye_hide2{
+    display: block;
+    &.closedEye{
+        display: none;
+    }
+}
+
+.eye{
+    position: absolute;
+    top: 30px;
+    right: 12px;
+    transform: translateY(-50%) ;
+    cursor: pointer;
+}

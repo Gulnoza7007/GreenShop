@@ -1,0 +1,112 @@
+.examples{
+    @include adaptive-value("margin-top", 130, 40,1);
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        @include media(630){
+            flex-wrap: wrap;
+        }
+    }
+    &__block{
+        width: 49%;
+        display: flex;
+        justify-content: space-between;
+        background-color: #FBFBFB;
+        padding: 30px 30px 0px 0px;
+        position: relative;
+        &_before{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        @include media(850){
+            padding: 15px 15px 0px 0px;
+        }
+        @include media(630){
+            width: 100%;
+        }
+    }
+    &__image{
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        background-color: #FBFBFB;
+        bottom: 0;
+        & img{
+            margin-top: -62px;
+            width: 100%;
+            height: 120%;
+            bottom: 10px;
+            background: url(image.png);
+            mix-blend-mode: multiply;
+            @include media(1000){
+                width: 100%;
+                height: 110%;
+                margin-top: -32px;
+                & img{
+                    height: 90%;
+                }
+            }
+        }
+        @include media(850){
+            width: 40%;
+            height: 70%;
+            margin: 0px 0px 20px 20px;
+        }
+        @include media(630){
+            width: 45%;
+            height: 80%;
+        }
+    }
+    &__content{
+        margin-left: 49%;
+        width: 51%;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+        margin-bottom: 40px;
+        
+    }
+    &__title{
+        font-family: 'Cera Pro';
+        font-weight: 900;
+        line-height: 133%;
+        text-transform: uppercase;
+        color: $black3D;
+        @include adaptive-value("font-size", 18,14,1);
+   }
+
+   &__subtitle{
+       font-family: 'Cera Pro';
+       font-weight: 400;
+       line-height: 171%;
+       color: $black72;
+       margin: 12px 0px 24px 0px;
+       @include adaptive-value("font-size", 18,14,1);
+       @include media(400){
+        margin: 10px 0px 14px 0px;
+       }
+   }
+
+   &__button{
+       font-family: 'Cera Pro';
+       font-weight: 500;
+       font-size: 14px;
+       line-height: 143%;
+       color: WHITE;
+       padding: 12px 32px;
+       background-color: $green4;
+       border-radius: 10px;
+       cursor: pointer;
+       & svg{
+           margin-left: 8px;
+           margin-bottom: -5px;
+       }
+       @include media(850){
+        font-size: 12px;
+        padding: 10px 20px;
+       }
+   }
+}

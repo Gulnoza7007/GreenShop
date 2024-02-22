@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <title>Green shop</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="login__body">
+                <div class="login__content">
+                    <div class="login__cross">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.170067 0.170067C0.396823 -0.056689 0.764467 -0.056689 0.991223 0.170067L6 5.17884L11.0088 0.170067C11.2355 -0.056689 11.6032 -0.056689 11.8299 0.170067C12.0567 0.396823 12.0567 0.764467 11.8299 0.991223L6.82116 6L11.8299 11.0088C12.0567 11.2355 12.0567 11.6032 11.8299 11.8299C11.6032 12.0567 11.2355 12.0567 11.0088 11.8299L6 6.82116L0.991223 11.8299C0.764467 12.0567 0.396823 12.0567 0.170067 11.8299C-0.056689 11.6032 -0.056689 11.2355 0.170067 11.0088L5.17884 6L0.170067 0.991223C-0.056689 0.764467 -0.056689 0.396823 0.170067 0.170067Z" fill="#46A358"/>
+                            </svg>
+                    </div>
+                    <div class="login_login_block">
+                        <div class="login__title">
+                            <div class="login__login login__active">Login</div>
+                            <div class="login__pipe">|</div>
+                            <div class="login__register">Register</div>
+                        </div>
+                        <div class="login__logo">
+                            <a href="/index.html"><img src="./images/header/Logo.png" alt=""></a>
+                        </div>
+                        <div class="login__logo_bottom">
+                            Login
+                        </div>
+                        <div class="login__block">
+                            <div class="login__text">Enter your username and password to login.</div>
+                            <form action="./account.html" class="login__form">
+                                <div class="field user-field">
+                                    <div class="input-field">
+                                        <input type="text" placeholder="Enter your Username" class="userName">
+                                    </div>
+                                    <span class="error user-error">
+                                        <p>Please enter only letters</p>
+                                    </span>
+                                </div>
+                                <div class="field create-password">
+                                    <div class="input-field">
+                                        <input type="password" placeholder="Create password" class="password">
+                                        <span class="hide eye">
+                                            <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4.34984 12.7748C2.4915 11.5582 1.2915 9.72482 1.2915 8.11649C1.2915 5.38316 4.7415 2.03316 8.99984 2.03316C10.7415 2.03316 12.3582 2.59149 13.6582 3.45816" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M15.5414 5.17517C16.2839 6.11684 16.7164 7.1585 16.7164 8.11684C16.7164 10.8502 13.2581 14.2002 8.99977 14.2002C8.24144 14.2002 7.50061 14.0918 6.80811 13.9002" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M7.13804 9.97249C6.6422 9.48166 6.3647 8.81249 6.3672 8.11499C6.36387 6.66083 7.54054 5.47916 8.99554 5.47666C9.69554 5.47499 10.3672 5.75249 10.8622 6.24749" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M11.5912 8.58258C11.3962 9.65925 10.5537 10.5034 9.47705 10.7009" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M15.5762 1.54158L2.43115 14.6866" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="show eye">
+                                            <img src="./images/header/eye.png" alt="">
+                                        </span>
+                                    </div>
+                                    <span class="error password-error">
+                                        <p>Password is invalid</p>
+                                    </span>
+                                    <div class="login__forgot_text">
+                                        Forgot Password?
+                                    </div>
+                                </div>
+                                <div class="field login__field-button">
+                                    <input type="submit" value="login">
+                                </div>
+                            </form>
+                            <div class="login__text login__lines">
+                                Or register with
+                            </div>
+                            <button class="login__google login__with_button">
+                                <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.4336 17.6055C14.6992 19.0703 12.4493 20 10 20C6.35547 20 3.15621 17.9922 1.42188 15.0625L2.07117 12.0695L4.94922 11.5352C5.61719 13.6914 7.63278 15.2734 10 15.2734C11.1484 15.2734 12.2148 14.9102 13.0938 14.2656L15.8594 14.6875L16.4336 17.6055Z" fill="#59C36A"/>
+                                    <path d="M16.4336 17.6055L15.8594 14.6875L13.0937 14.2656C12.2148 14.9102 11.1484 15.2734 10 15.2734V20C12.4493 20 14.6992 19.0703 16.4336 17.6055Z" fill="#00A66C"/>
+                                    <path d="M4.72656 10C4.72656 10.539 4.8086 11.0546 4.94922 11.5352L1.42188 15.0625C0.542969 13.5859 0 11.8515 0 10C0 8.1484 0.542969 6.41406 1.42188 4.9375L4.25285 5.42473L4.94922 8.46484C4.8086 8.94527 4.72656 9.4609 4.72656 10Z" fill="#FFDA2D"/>
+                                    <path d="M20 10C20 13.0468 18.5899 15.7773 16.4336 17.6055L13.0938 14.2656C13.7734 13.7734 14.3477 13.1171 14.7227 12.3437H10C9.67184 12.3437 9.41406 12.0859 9.41406 11.7578V8.24219C9.41406 7.91402 9.67184 7.65625 10 7.65625H19.25C19.5312 7.65625 19.7773 7.85543 19.8242 8.13668C19.9414 8.74609 20 9.37887 20 10V10Z" fill="#4086F4"/>
+                                    <path d="M14.7227 12.3437C14.3477 13.1171 13.7734 13.7734 13.0938 14.2656L16.4336 17.6055C18.5899 15.7773 20 13.0469 20 10C20 9.37887 19.9414 8.74609 19.8242 8.13668C19.7773 7.85543 19.5312 7.65625 19.25 7.65625H10V12.3437H14.7227Z" fill="#4175DF"/>
+                                    <path d="M16.5977 2.79293C16.6094 2.95699 16.5391 3.10937 16.4336 3.22652L13.9258 5.72262C13.7266 5.93355 13.3985 5.95699 13.1641 5.78121C12.2382 5.08984 11.1484 4.72656 10 4.72656C7.63278 4.72656 5.61719 6.30855 4.94922 8.46484L1.42188 4.9375C3.15621 2.00781 6.35547 0 10 0C12.332 0 14.6055 0.859375 16.3867 2.35934C16.5156 2.46484 16.5859 2.62887 16.5977 2.79293V2.79293Z" fill="#FF641A"/>
+                                    <path d="M13.1641 5.78121C13.3984 5.95703 13.7265 5.93355 13.9257 5.72262L16.4336 3.22652C16.5391 3.10937 16.6094 2.95703 16.5976 2.79293C16.5859 2.62883 16.5156 2.46484 16.3867 2.35934C14.6055 0.859375 12.332 0 10 0V4.72656C11.1484 4.72656 12.2382 5.08984 13.1641 5.78121Z" fill="#F03800"/>
+                                    </svg></span>
+                                    Login with Google
+                            </button>
+                            <button class="login__facebook login__with_button">
+                                <span>
+                                    <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.33076 3.32083H10.1566V0.140826C9.84159 0.0974924 8.75826 -7.62939e-06 7.4966 -7.62939e-06C1.71993 -7.62939e-06 3.2916 6.54166 3.0616 7.49999H0.155762V11.055H3.06076V20H6.62243V11.0558H9.40993L9.85243 7.50083H6.6216C6.77826 5.14749 5.98743 3.32083 8.33076 3.32083Z" fill="#3B5999"/>
+                                    </svg>
+                                    </span>
+                                    Login with Facebook
+                            </button>
+                            <div class="login__bottom">
+                                <div class="login__bottom_text">
+                                    Don’t have an account?
+                                </div>
+                                <button class="login__register">
+                                     Sign Up
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login_register_block">
+                        <div class="login__title">
+                            <div class="login__login">Login</div>
+                            <div class="login__pipe">|</div>
+                            <div class="login__register login__active">Register</div>
+                        </div>
+                        <div class="register__logo">
+                            <a href="/index.html"><img src="./images/header/Logo.png" alt=""></a>
+                        </div>
+                        <div class="login__logo_bottom">
+                            Create an account
+                        </div>
+                        <div class="login__block">
+                            <div class="login__text">Enter your email and password to register.</div>
+                                <form action="./account.html" class="register__form">
+                                    <div class="field user-field">
+                                        <div class="input-field">
+                                            <input type="text" placeholder="Enter your Username" class="userName">
+                                        </div>
+                                        <span class="error user-error">
+                                            <p>Please enter only letters</p>
+                                        </span>
+                                    </div>
+                                    <div class="field  email-field">
+                                        <div class="input-field">
+                                            <input type="email" placeholder="Enter your email address" class="email">
+                                        </div>
+                                        <span class="error email-error">
+                                            <p>Please enter a valid email</p>
+                                        </span>
+                                    </div>
+                                    <div class="field create-password">
+                                        <div class="input-field">
+                                            <input type="password" placeholder="Create password" class="password">
+                                            <span class="eye hide1">
+                                                <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M4.34984 12.7748C2.4915 11.5582 1.2915 9.72482 1.2915 8.11649C1.2915 5.38316 4.7415 2.03316 8.99984 2.03316C10.7415 2.03316 12.3582 2.59149 13.6582 3.45816" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M15.5414 5.17517C16.2839 6.11684 16.7164 7.1585 16.7164 8.11684C16.7164 10.8502 13.2581 14.2002 8.99977 14.2002C8.24144 14.2002 7.50061 14.0918 6.80811 13.9002" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M7.13804 9.97249C6.6422 9.48166 6.3647 8.81249 6.3672 8.11499C6.36387 6.66083 7.54054 5.47916 8.99554 5.47666C9.69554 5.47499 10.3672 5.75249 10.8622 6.24749" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M11.5912 8.58258C11.3962 9.65925 10.5537 10.5034 9.47705 10.7009" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M15.5762 1.54158L2.43115 14.6866" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                            <span class="eye show1">
+                                                <img src="./images/header/eye.png" alt="">
+                                            </span>
+                                        </div>
+                                        <span class="error password-error">
+                                            <p>Please enter atleast 8 characters with numbers, symbols, small and capital letters</p>
+                                        </span>
+                                    </div>
+                                    <div class="field confirm-password">
+                                        <div class="input-field">
+                                            <input type="password" placeholder="Confirm password" class="cPassword">
+                                            <span class="eye hide2">
+                                                <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M4.34984 12.7748C2.4915 11.5582 1.2915 9.72482 1.2915 8.11649C1.2915 5.38316 4.7415 2.03316 8.99984 2.03316C10.7415 2.03316 12.3582 2.59149 13.6582 3.45816" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M15.5414 5.17517C16.2839 6.11684 16.7164 7.1585 16.7164 8.11684C16.7164 10.8502 13.2581 14.2002 8.99977 14.2002C8.24144 14.2002 7.50061 14.0918 6.80811 13.9002" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M7.13804 9.97249C6.6422 9.48166 6.3647 8.81249 6.3672 8.11499C6.36387 6.66083 7.54054 5.47916 8.99554 5.47666C9.69554 5.47499 10.3672 5.75249 10.8622 6.24749" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M11.5912 8.58258C11.3962 9.65925 10.5537 10.5034 9.47705 10.7009" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M15.5762 1.54158L2.43115 14.6866" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                            <span class="eye show2">
+                                                <img src="./images/header/eye.png" alt="">
+                                            </span>
+                                        </div>
+                                        <span class="error confirm-error">
+                                            <p>Password don't match</p>
+                                        </span>
+                                    </div>
+                                    <div class="field field-button">
+                                        <input type="submit" value="Register">
+                                    </div>
+                                </form>
+                                <div class="login__text login__lines">
+                                    Or register with
+                                </div>
+                                <button class="login__google login__with_button">
+                                    <span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.4336 17.6055C14.6992 19.0703 12.4493 20 10 20C6.35547 20 3.15621 17.9922 1.42188 15.0625L2.07117 12.0695L4.94922 11.5352C5.61719 13.6914 7.63278 15.2734 10 15.2734C11.1484 15.2734 12.2148 14.9102 13.0938 14.2656L15.8594 14.6875L16.4336 17.6055Z" fill="#59C36A"/>
+                                        <path d="M16.4336 17.6055L15.8594 14.6875L13.0937 14.2656C12.2148 14.9102 11.1484 15.2734 10 15.2734V20C12.4493 20 14.6992 19.0703 16.4336 17.6055Z" fill="#00A66C"/>
+                                        <path d="M4.72656 10C4.72656 10.539 4.8086 11.0546 4.94922 11.5352L1.42188 15.0625C0.542969 13.5859 0 11.8515 0 10C0 8.1484 0.542969 6.41406 1.42188 4.9375L4.25285 5.42473L4.94922 8.46484C4.8086 8.94527 4.72656 9.4609 4.72656 10Z" fill="#FFDA2D"/>
+                                        <path d="M20 10C20 13.0468 18.5899 15.7773 16.4336 17.6055L13.0938 14.2656C13.7734 13.7734 14.3477 13.1171 14.7227 12.3437H10C9.67184 12.3437 9.41406 12.0859 9.41406 11.7578V8.24219C9.41406 7.91402 9.67184 7.65625 10 7.65625H19.25C19.5312 7.65625 19.7773 7.85543 19.8242 8.13668C19.9414 8.74609 20 9.37887 20 10V10Z" fill="#4086F4"/>
+                                        <path d="M14.7227 12.3437C14.3477 13.1171 13.7734 13.7734 13.0938 14.2656L16.4336 17.6055C18.5899 15.7773 20 13.0469 20 10C20 9.37887 19.9414 8.74609 19.8242 8.13668C19.7773 7.85543 19.5312 7.65625 19.25 7.65625H10V12.3437H14.7227Z" fill="#4175DF"/>
+                                        <path d="M16.5977 2.79293C16.6094 2.95699 16.5391 3.10937 16.4336 3.22652L13.9258 5.72262C13.7266 5.93355 13.3985 5.95699 13.1641 5.78121C12.2382 5.08984 11.1484 4.72656 10 4.72656C7.63278 4.72656 5.61719 6.30855 4.94922 8.46484L1.42188 4.9375C3.15621 2.00781 6.35547 0 10 0C12.332 0 14.6055 0.859375 16.3867 2.35934C16.5156 2.46484 16.5859 2.62887 16.5977 2.79293V2.79293Z" fill="#FF641A"/>
+                                        <path d="M13.1641 5.78121C13.3984 5.95703 13.7265 5.93355 13.9257 5.72262L16.4336 3.22652C16.5391 3.10937 16.6094 2.95703 16.5976 2.79293C16.5859 2.62883 16.5156 2.46484 16.3867 2.35934C14.6055 0.859375 12.332 0 10 0V4.72656C11.1484 4.72656 12.2382 5.08984 13.1641 5.78121Z" fill="#F03800"/>
+                                        </svg>
+                                    </span>
+                                        Login with Google
+                                </button>
+                                <button class="login__facebook login__with_button">
+                                    <span>
+                                        <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.33076 3.32083H10.1566V0.140826C9.84159 0.0974924 8.75826 -7.62939e-06 7.4966 -7.62939e-06C1.71993 -7.62939e-06 3.2916 6.54166 3.0616 7.49999H0.155762V11.055H3.06076V20H6.62243V11.0558H9.40993L9.85243 7.50083H6.6216C6.77826 5.14749 5.98743 3.32083 8.33076 3.32083Z" fill="#3B5999"/>
+                                        </svg>
+                                        </span>
+                                        Login with Facebook
+                                </button>
+                                <div class="login__bottom">
+                                <div class="login__bottom_text">
+                                    Already have an account?
+                                </div>
+                                <button class="login__login">
+                                    Login
+                                </button>
+                            </div>
+                             </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="header__container">
+                <nav class="header__nav">
+                    <div class="header__logo">
+                        <img src="./images/header/Group (7).png" alt="">
+                    </div>
+                    <ul class="header__menu">
+                        <li class="header__list homePage" ><a>Home</a></li>
+                        <li class="header__list"><a href="./shop.html">Shop</a></li>
+                        <li class="header__list"><a>Plant Care</a></li>
+                        <li class="header__list"><a>Blogs</a></li>
+                    </ul>
+                    <div class="header__buttons">
+                        <div class="header__search">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.5726 16.0029C10.5755 19.1865 4.988 18.3056 2.02842 14.6542C-0.828088 11.129 -0.64944 6.04347 2.44943 2.82482C5.65137 -0.500594 10.6854 -0.944524 14.3346 1.78337C15.642 2.76051 16.6183 4.00364 17.2542 5.50838C17.8938 7.02186 18.0881 8.59654 17.8663 10.2205C17.6452 11.837 17 13.2775 15.9499 14.6217C16.0349 14.6773 16.1255 14.7173 16.1904 14.7822C17.3448 15.9311 18.4947 17.0843 19.6491 18.2331C19.9227 18.5054 20.0589 18.8225 19.9776 19.2047C19.8165 19.9651 18.9107 20.2586 18.3298 19.7366C18.0575 19.4925 17.807 19.2234 17.5484 18.9649C16.6002 18.0177 15.6526 17.0699 14.7044 16.1227C14.665 16.0853 14.6238 16.0503 14.5726 16.0029ZM15.9605 8.98677C15.9705 5.12689 12.8529 2.00627 8.98261 2.00065C5.12292 1.99503 2.00781 5.09068 1.99094 8.94806C1.97408 12.8173 5.08544 15.9467 8.96762 15.9648C12.8117 15.9829 15.9505 12.8504 15.9605 8.98677Z" fill="#3D3D3D"/>
+                                </svg>
+                        </div>
+                        <div class="header__shopping-card">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.1567 20.25H9.89163C6.79003 20.25 4.26667 17.7267 4.26667 14.6251V8.85947C4.26667 5.9762 2.82958 3.30739 0.422521 1.72031C-0.00975775 1.43531 -0.129101 0.853876 0.155897 0.421598C0.440896 -0.0107278 1.02228 -0.130118 1.45465 0.154974C2.82874 1.06097 3.94351 2.2559 4.74067 3.63167C4.91293 3.82466 6.30202 5.29699 8.57919 5.29699H19.3748C22.3201 5.24191 24.6254 8.19769 23.8554 11.0406L22.6126 15.9939C21.9839 18.4998 19.7404 20.25 17.1567 20.25ZM5.90513 6.64234C6.06099 7.36238 6.14166 8.10483 6.14166 8.85947V14.6251C6.14166 16.6928 7.8239 18.375 9.89163 18.375H17.1567C18.8792 18.375 20.3748 17.2082 20.794 15.5376L22.0367 10.5844C22.4943 8.89509 21.1243 7.13931 19.3748 7.17198H8.57914C7.54926 7.17198 6.65283 6.94993 5.90513 6.64234ZM9.42289 22.8281C9.42289 22.1809 8.89822 21.6563 8.25102 21.6563C6.69609 21.7182 6.69745 23.9387 8.25102 24C8.89822 24 9.42289 23.4753 9.42289 22.8281ZM18.751 22.8281C18.751 22.1809 18.2263 21.6563 17.5791 21.6563C16.0242 21.7182 16.0255 23.9387 17.5791 24C18.2263 24 18.751 23.4753 18.751 22.8281ZM20.3123 9.98446C20.3123 9.46668 19.8925 9.04697 19.3748 9.04697H8.95414C7.71027 9.09647 7.71121 10.8729 8.95414 10.922H19.3748C19.8925 10.922 20.3123 10.5022 20.3123 9.98446Z" fill="#3D3D3D"/>
+                                </svg>                                
+                            <p class="header__counter">0</p>
+                        </div>
+                        <button class="header__login">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.1601 9.10057H7.12598" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.7212 6.67059L17.1612 9.10059L14.7212 11.5306" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.6342 5.35823C12.3592 2.3749 11.2425 1.29156 6.80082 1.29156C0.883322 1.29156 0.883322 3.21656 0.883322 8.9999C0.883322 14.7832 0.883322 16.7082 6.80082 16.7082C11.2425 16.7082 12.3592 15.6249 12.6342 12.6416" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            Login
+                        </button>
+                    </div>
+                </nav>
+                <div class="header__mobile">
+                    <div class="header__mobile_search">
+                        <span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52959 2.2436C5.50469 2.2436 2.24326 5.50244 2.24326 9.5207C2.24326 13.539 5.50469 16.7978 9.52959 16.7978C11.5376 16.7978 13.3546 15.9875 14.6732 14.675C15.9977 13.3566 16.8159 11.5347 16.8159 9.5207C16.8159 5.50244 13.5545 2.2436 9.52959 2.2436ZM0.833008 9.5207C0.833008 4.72204 4.72737 0.833344 9.52959 0.833344C14.3318 0.833344 18.2262 4.72204 18.2262 9.5207C18.2262 11.6706 17.4436 13.6389 16.149 15.1554L18.9595 17.9627C19.2351 18.2379 19.2353 18.6843 18.9601 18.9599C18.6849 19.2354 18.2384 19.2356 17.9629 18.9604L15.1497 16.1505C13.6343 17.4335 11.6719 18.2081 9.52959 18.2081C4.72737 18.2081 0.833008 14.3194 0.833008 9.5207Z" fill="#A5A5A5"/>
+                                </svg>
+                        </span>
+                        <input type="text" placeholder="Find your plants" class="header__mobile_input">
+                    </div>
+                    <div class="header__mobile_burger">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.2144 16.3926H4.28125" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9375 16.3934C13.9375 18.2651 14.5617 18.8884 16.4325 18.8884C18.3033 18.8884 18.9274 18.2651 18.9274 16.3934C18.9274 14.5218 18.3033 13.8984 16.4325 13.8984C14.5617 13.8984 13.9375 14.5218 13.9375 16.3934Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12.9951 6.77801H18.9274" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.27202 6.77677C9.27202 4.90595 8.64786 4.2818 6.77704 4.2818C4.9054 4.2818 4.28125 4.90595 4.28125 6.77677C4.28125 8.64841 4.9054 9.27175 6.77704 9.27175C8.64786 9.27175 9.27202 8.64841 9.27202 6.77677Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    </div>
+                    <ul class="header__mobile_menu">
+                        <a class="header__mobile_button">
+                            <img src="./images/header/cross.png" alt="">
+                        </a>
+                        <li class="header__mobile_list homePage"><a href="./index.html">Home</a></li>
+                        <li class="header__mobile_list"><a href="./shop.html">Shop</a></li>
+                        <li class="header__mobile_list"><a href="">Plant Care</a></li>
+                        <li class="header__mobile_list"><a href="">Blogs</a></li>
+                        <button class="header__login">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.1601 9.10057H7.12598" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.7212 6.67059L17.1612 9.10059L14.7212 11.5306" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.6342 5.35823C12.3592 2.3749 11.2425 1.29156 6.80082 1.29156C0.883322 1.29156 0.883322 3.21656 0.883322 8.9999C0.883322 14.7832 0.883322 16.7082 6.80082 16.7082C11.2425 16.7082 12.3592 15.6249 12.6342 12.6416" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            Login
+                        </button>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="welcome">
+                <div class="welcome__container">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="welcome__body">
+                                <div class="welcome__content">
+                                    <div class="welcome__suptitle">
+                                        Welcome to GreenShop
+                                    </div>
+                                    <div class="welcome__title">
+                                        Let's Make a Better <span style="color:  #46A358">Planet</span>
+                                    </div>
+                                    <div class="welcome__subtitle">
+                                        We are an online plant shop offering a wide range<span> of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</span>
+                                     </div>
+                                    <button class="welcome__button">
+                                        SHOP NOW
+                                        <span>
+                                            <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.167 4.81712L1.16699 4.81712" stroke="#46A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M7.13379 0.8008C7.13379 0.8008 11.1671 2.9748 11.1671 4.81613C11.1671 6.6588 7.13379 8.83347 7.13379 8.83347" stroke="#46A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="welcome__image">
+                                    <div class="welcome__image_big">
+                                        <img src="./images/welcome/01 1.png" alt="">
+                                    </div>
+                                    <div class="welcome__image_small">
+                                        <img src="./images/welcome/01 2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="welcome__body">
+                                <div class="welcome__content">
+                                    <div class="welcome__suptitle">
+                                        Welcome to GreenShop
+                                    </div>
+                                    <div class="welcome__title">
+                                        Let's Make a Better <span style="color:  #46A358">Planet</span>
+                                    </div>
+                                    <div class="welcome__subtitle">
+                                        We are an online plant shop offering a wide range<span> of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</span>
+                                     </div>
+                                    <button class="welcome__button">
+                                        SHOP NOW
+                                        <span>
+                                            <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.167 4.81712L1.16699 4.81712" stroke="#46A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M7.13379 0.8008C7.13379 0.8008 11.1671 2.9748 11.1671 4.81613C11.1671 6.6588 7.13379 8.83347 7.13379 8.83347" stroke="#46A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="welcome__image">
+                                    <div class="welcome__image_big">
+                                        <img src="./images/welcome/01 1.png" alt="">
+                                    </div>
+                                    <div class="welcome__image_small">
+                                        <img src="./images/welcome/01 2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="welcome__body">
+                                <div class="welcome__content">
+                                    <div class="welcome__suptitle">
+                                        Welcome to GreenShop
+                                    </div>
+                                    <div class="welcome__title">
+                                        Let's Make a Better <span style="color:  #46A358">Planet</span>
+                                    </div>
+                                    <div class="welcome__subtitle">
+                                       We are an online plant shop offering a wide range <span> of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</span>
+                                    </div>
+                                    <button class="welcome__button">
+                                        SHOP NOW
+                                        <span>
+                                            <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.167 4.81712L1.16699 4.81712" stroke="#46A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M7.13379 0.8008C7.13379 0.8008 11.1671 2.9748 11.1671 4.81613C11.1671 6.6588 7.13379 8.83347 7.13379 8.83347" stroke="#46A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="welcome__image">
+                                    <div class="welcome__image_big">
+                                        <img src="./images/welcome/01 1.png" alt="">
+                                    </div>
+                                    <div class="welcome__image_small">
+                                        <img src="./images/welcome/01 2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                </div>
+            </section>
+            <section class="plants">
+                <div class="plants__container">
+                    <div class="plants__body">
+                        <div class="plants__selection">
+                            <div class="plants__categories">
+                                <div class="plants__categories_title">
+                                    Categories
+                                </div>
+                                <div class="plants__categories_list">
+                                    <p>House Plants</p>
+                                    <p>(0)</p>
+                                </div>
+                                <div class="plants__categories_list">
+                                    <p>Potter Plants</p>
+                                    <p>(0)</p>
+                                </div>
+                                <div class="plants__categories_list">
+                                    <p>Seeds</p>
+                                    <p>(0)</p>
+                                </div>
+                                <div class="plants__categories_list">
+                                    <p>Small Plants</p>
+                                    <p>(0)</p>
+                                </div>
+                                <div class="plants__categories_list">
+                                    <p>Big Plants</p>
+                                    <p>(0)</p>
+                                </div>
+                                <div class="plants__categories_list">
+                                    <p>Succulents</p>
+                                    <p>(0)</p>
+                                </div>
+                                <div class="plants__categories_list">
+                                    <p>Trerarriums</p>
+                                    <p>(0)</p>
+                                </div>
+                                <div class="plants__categories_list">
+                                    <p>Gardening</p>
+                                    <p>(0)</p>
+                                </div>
+                                <div class="plants__categories_list">
+                                    <p>Accessories</p>
+                                    <p>(0)</p>
+                                </div>
+                            </div>
+                            <div class="plants__price">
+                                <div class="plants__categories_title">
+                                    Price Range
+                                </div>
+                                <p class="filter-price">
+                                    <label>Min price: $<input type="number" name="min-price"></label>
+                                    <label>Max price: $<input type="number" name="max-price"></label>
+                                </p>
+                                <button class="plants__categories_filter">
+                                    Filter
+                                </button>
+                            </div>
+                            <div class="plants__size">
+                                <div class="plants__categories_title">
+                                      Size
+                                </div>
+                                <div class="plants__categories_list">
+                                    <p>Small</p>
+                                    <p>(0)</p>
+                                </div>
+                                <div class="plants__categories_list">
+                                    <p>Medium</p>
+                                    <p>(0)</p>
+                                </div>
+                                <div class="plants__categories_list">
+                                    <p>Large</p>
+                                    <p>(0)</p>
+                                </div>
+                            </div>
+                            <div class="plants__categories_image">
+                                <img src="./images/plants/Super Sale Banner.png" alt="">
+                            </div>
+                        </div>
+                        <div class="plants__right">
+                            <div class="plants__filter">
+                                <div class="plants__filter_left">
+                                    <button class="plants__filter_all">
+                                        All Plants
+                                    </button>
+                                    <button class="plants__filter_new">
+                                        New Arrivals
+                                    </button>
+                                    <button class="plants__filter_sale">
+                                        Sale
+                                    </button>
+                                </div>
+                                <div class="plants__filter_condition">
+                                    <div class="plants__text">
+                                        Short by:
+                                    </div>
+                                    <select name="" id="select">
+                                        <option value="Default">Default sorting</option>
+                                        <option value="LowtoHigh">Low to high</option>
+                                        <option value="HightoLow">High to low</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <ul class="plants__content">
+                                <li class="plants__block" data-price="">
+                                    <div class="plants__block_image">
+                                        <img src="./images/plants/image 1 (2).png" alt="">
+                                    </div>
+                                    <div class="plants__block_text">
+                                        Barberton Daisy
+                                    </div>
+                                    <div class="plants__block_icons">
+                                        <span class="plants__shopping">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_4_201)">
+                                                <path d="M14.294 16.8745H8.24077C5.65655 16.8745 3.55412 14.7721 3.55412 12.1879V7.38404C3.55412 4.98174 2.35676 2.75812 0.351225 1.43578C-0.00894369 1.19832 -0.108379 0.71388 0.129078 0.353711C0.366535 -0.00649689 0.850939 -0.105971 1.21119 0.131564C2.35606 0.886427 3.28487 1.88203 3.94905 3.0283C4.09258 3.1891 5.24995 4.41583 7.14726 4.41583H16.142C18.596 4.36994 20.5168 6.83265 19.8752 9.20136L18.8397 13.3283C18.3159 15.4163 16.4466 16.8745 14.294 16.8745ZM4.91926 5.53676C5.04912 6.13669 5.11634 6.75528 5.11634 7.38404V12.1879C5.11634 13.9107 6.51796 15.3123 8.24077 15.3123H14.294C15.7291 15.3123 16.9752 14.3401 17.3245 12.9482L18.3599 8.8212C18.7412 7.41372 17.5997 5.95082 16.142 5.97804H7.14722C6.28913 5.97804 5.54224 5.79304 4.91926 5.53676ZM7.85021 19.0226C7.85021 18.4833 7.41307 18.0462 6.87383 18.0462C5.57828 18.0978 5.57942 19.9479 6.87383 19.9989C7.41307 19.9989 7.85021 19.5618 7.85021 19.0226ZM15.6222 19.0226C15.6222 18.4833 15.1851 18.0462 14.6459 18.0462C13.3503 18.0978 13.3514 19.9479 14.6459 19.9989C15.1851 19.9989 15.6222 19.5618 15.6222 19.0226ZM16.9231 8.32137C16.9231 7.88996 16.5734 7.54026 16.142 7.54026H7.45966C6.42329 7.5815 6.42407 9.06158 7.45966 9.10248H16.142C16.5734 9.10248 16.9231 8.75277 16.9231 8.32137Z" fill= 'inherit'/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_4_201">
+                                                <rect width="20" height="20" fill="white"/>
+                                                </clipPath>
+                                                </defs>
+                                                </svg>
+                                        </span>
+                                        <span class="plants__like">
+                                            <svg width="20" height="18" viewBox="0 0 20 18" fill="auto" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 17.8873C9.71527 17.8873 9.44077 17.7842 9.22684 17.5968C8.41888 16.8903 7.63992 16.2264 6.95267 15.6408L6.94916 15.6377C4.93423 13.9207 3.19427 12.4378 1.98364 10.9771C0.630341 9.34409 0 7.79578 0 6.10434C0 4.46097 0.563507 2.94485 1.58661 1.83508C2.62192 0.712189 4.04251 0.09375 5.58716 0.09375C6.74164 0.09375 7.79892 0.45874 8.72955 1.1785C9.19922 1.54181 9.62494 1.98645 10 2.5051C10.3752 1.98645 10.8008 1.54181 11.2706 1.1785C12.2012 0.45874 13.2585 0.09375 14.413 0.09375C15.9575 0.09375 17.3782 0.712189 18.4135 1.83508C19.4366 2.94485 20 4.46097 20 6.10434C20 7.79578 19.3698 9.34409 18.0165 10.9769C16.8059 12.4378 15.0661 13.9205 13.0515 15.6374C12.363 16.224 11.5828 16.8889 10.773 17.5971C10.5592 17.7842 10.2846 17.8873 10 17.8873ZM5.58716 1.26532C4.37363 1.26532 3.25882 1.74963 2.44781 2.62915C1.62476 3.52194 1.17142 4.75607 1.17142 6.10434C1.17142 7.52692 1.70013 8.79919 2.88559 10.2296C4.03137 11.6122 5.73563 13.0645 7.70889 14.7462L7.71255 14.7492C8.4024 15.3371 9.18442 16.0036 9.99832 16.7153C10.8171 16.0023 11.6003 15.3347 12.2916 14.7458C14.2647 13.0642 15.9688 11.6122 17.1146 10.2296C18.2999 8.79919 18.8286 7.52692 18.8286 6.10434C18.8286 4.75607 18.3752 3.52194 17.5522 2.62915C16.7413 1.74963 15.6264 1.26532 14.413 1.26532C13.524 1.26532 12.7078 1.54791 11.9872 2.10516C11.3449 2.60199 10.8975 3.23004 10.6352 3.66949C10.5003 3.89548 10.2629 4.03036 10 4.03036C9.73709 4.03036 9.49966 3.89548 9.36478 3.66949C9.10263 3.23004 8.65524 2.60199 8.01285 2.10516C7.29218 1.54791 6.47598 1.26532 5.58716 1.26532Z" fill="#3D3D3D"/>
+                                                </svg>
+                                        </span>
+                                        <span class="plants__search">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="auto" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.5656 16.0023C10.5704 19.1859 4.98549 18.3049 2.02729 14.6537C-0.827886 11.1285 -0.64932 6.04315 2.44811 2.82459C5.64856 -0.500733 10.6802 -0.94465 14.3277 1.78316C15.6345 2.76028 16.6104 4.00338 17.246 5.50808C17.8853 7.02152 18.0795 8.59614 17.8578 10.2201C17.6368 11.8366 16.9918 13.2769 15.9423 14.6212C16.0272 14.6768 16.1178 14.7167 16.1827 14.7816C17.3365 15.9305 18.4859 17.0836 19.6397 18.2325C19.9132 18.5047 20.0493 18.8219 19.9682 19.204C19.8071 19.9644 18.9018 20.2579 18.3211 19.7359C18.0489 19.4918 17.7985 19.2227 17.54 18.9642C16.5923 18.0171 15.6451 17.0693 14.6973 16.1221C14.658 16.0847 14.6168 16.0497 14.5656 16.0023ZM15.9529 8.98637C15.9629 5.12659 12.8468 2.00606 8.97825 2.00044C5.12035 1.99482 2.00669 5.09038 1.98983 8.94766C1.97297 12.8168 5.08289 15.9461 8.96326 15.9642C12.8055 15.9823 15.9429 12.8499 15.9529 8.98637Z" fill="#3D3D3D"/>
+                                                </svg>                                                    
+                                        </span>
+                                    </div>
+                                    <div class="plants__block_price">
+                                        $119.00
+                                    </div>
+                                </li>
+                                <li class="plants__block" data-price="">
+                                    <div class="plants__block_image">
+                                        <img src="./images/plants/2.png" alt="">
+                                    </div>
+                                    <div class="plants__block_text">
+                                        Angel Wing Begonia
+                                    </div>
+                                    <div class="plants__block_icons">
+                                        <span class="plants__shopping">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="auto" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_4_201)">
+                                                <path d="M14.294 16.8745H8.24077C5.65655 16.8745 3.55412 14.7721 3.55412 12.1879V7.38404C3.55412 4.98174 2.35676 2.75812 0.351225 1.43578C-0.00894369 1.19832 -0.108379 0.71388 0.129078 0.353711C0.366535 -0.00649689 0.850939 -0.105971 1.21119 0.131564C2.35606 0.886427 3.28487 1.88203 3.94905 3.0283C4.09258 3.1891 5.24995 4.41583 7.14726 4.41583H16.142C18.596 4.36994 20.5168 6.83265 19.8752 9.20136L18.8397 13.3283C18.3159 15.4163 16.4466 16.8745 14.294 16.8745ZM4.91926 5.53676C5.04912 6.13669 5.11634 6.75528 5.11634 7.38404V12.1879C5.11634 13.9107 6.51796 15.3123 8.24077 15.3123H14.294C15.7291 15.3123 16.9752 14.3401 17.3245 12.9482L18.3599 8.8212C18.7412 7.41372 17.5997 5.95082 16.142 5.97804H7.14722C6.28913 5.97804 5.54224 5.79304 4.91926 5.53676ZM7.85021 19.0226C7.85021 18.4833 7.41307 18.0462 6.87383 18.0462C5.57828 18.0978 5.57942 19.9479 6.87383 19.9989C7.41307 19.9989 7.85021 19.5618 7.85021 19.0226ZM15.6222 19.0226C15.6222 18.4833 15.1851 18.0462 14.6459 18.0462C13.3503 18.0978 13.3514 19.9479 14.6459 19.9989C15.1851 19.9989 15.6222 19.5618 15.6222 19.0226ZM16.9231 8.32137C16.9231 7.88996 16.5734 7.54026 16.142 7.54026H7.45966C6.42329 7.5815 6.42407 9.06158 7.45966 9.10248H16.142C16.5734 9.10248 16.9231 8.75277 16.9231 8.32137Z" fill="inherit"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_4_201">
+                                                <rect width="20" height="20" fill="white"/>
+                                                </clipPath>
+                                                </defs>
+                                                </svg>
+                                        </span>
+                                        <span class="plants__like">
+                                            <svg width="20" height="18" viewBox="0 0 20 18" fill="auto" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 17.8873C9.71527 17.8873 9.44077 17.7842 9.22684 17.5968C8.41888 16.8903 7.63992 16.2264 6.95267 15.6408L6.94916 15.6377C4.93423 13.9207 3.19427 12.4378 1.98364 10.9771C0.630341 9.34409 0 7.79578 0 6.10434C0 4.46097 0.563507 2.94485 1.58661 1.83508C2.62192 0.712189 4.04251 0.09375 5.58716 0.09375C6.74164 0.09375 7.79892 0.45874 8.72955 1.1785C9.19922 1.54181 9.62494 1.98645 10 2.5051C10.3752 1.98645 10.8008 1.54181 11.2706 1.1785C12.2012 0.45874 13.2585 0.09375 14.413 0.09375C15.9575 0.09375 17.3782 0.712189 18.4135 1.83508C19.4366 2.94485 20 4.46097 20 6.10434C20 7.79578 19.3698 9.34409 18.0165 10.9769C16.8059 12.4378 15.0661 13.9205 13.0515 15.6374C12.363 16.224 11.5828 16.8889 10.773 17.5971C10.5592 17.7842 10.2846 17.8873 10 17.8873ZM5.58716 1.26532C4.37363 1.26532 3.25882 1.74963 2.44781 2.62915C1.62476 3.52194 1.17142 4.75607 1.17142 6.10434C1.17142 7.52692 1.70013 8.79919 2.88559 10.2296C4.03137 11.6122 5.73563 13.0645 7.70889 14.7462L7.71255 14.7492C8.4024 15.3371 9.18442 16.0036 9.99832 16.7153C10.8171 16.0023 11.6003 15.3347 12.2916 14.7458C14.2647 13.0642 15.9688 11.6122 17.1146 10.2296C18.2999 8.79919 18.8286 7.52692 18.8286 6.10434C18.8286 4.75607 18.3752 3.52194 17.5522 2.62915C16.7413 1.74963 15.6264 1.26532 14.413 1.26532C13.524 1.26532 12.7078 1.54791 11.9872 2.10516C11.3449 2.60199 10.8975 3.23004 10.6352 3.66949C10.5003 3.89548 10.2629 4.03036 10 4.03036C9.73709 4.03036 9.49966 3.89548 9.36478 3.66949C9.10263 3.23004 8.65524 2.60199 8.01285 2.10516C7.29218 1.54791 6.47598 1.26532 5.58716 1.26532Z" fill="#3D3D3D"/>
+                                                </svg>
+                                        </span>
+                                        <span class="plants__search">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="auto" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.5656 16.0023C10.5704 19.1859 4.98549 18.3049 2.02729 14.6537C-0.827886 11.1285 -0.64932 6.04315 2.44811 2.82459C5.64856 -0.500733 10.6802 -0.94465 14.3277 1.78316C15.6345 2.76028 16.6104 4.00338 17.246 5.50808C17.8853 7.02152 18.0795 8.59614 17.8578 10.2201C17.6368 11.8366 16.9918 13.2769 15.9423 14.6212C16.0272 14.6768 16.1178 14.7167 16.1827 14.7816C17.3365 15.9305 18.4859 17.0836 19.6397 18.2325C19.9132 18.5047 20.0493 18.8219 19.9682 19.204C19.8071 19.9644 18.9018 20.2579 18.3211 19.7359C18.0489 19.4918 17.7985 19.2227 17.54 18.9642C16.5923 18.0171 15.6451 17.0693 14.6973 16.1221C14.658 16.0847 14.6168 16.0497 14.5656 16.0023ZM15.9529 8.98637C15.9629 5.12659 12.8468 2.00606 8.97825 2.00044C5.12035 1.99482 2.00669 5.09038 1.98983 8.94766C1.97297 12.8168 5.08289 15.9461 8.96326 15.9642C12.8055 15.9823 15.9429 12.8499 15.9529 8.98637Z" fill="#3D3D3D"/>
+                                                </svg>                                                    
+                                        </span>
+                                    </div>
+                                    <div class="plants__block_price">
+                                        $169.00
+                                    </div>
+                                </li>
+                                <li class="plants__block discount" data-price="">
+                                    <div class="discount__text">
+                                        13% OFF
+                                    </div>
+                                    <div class="plants__block_image">
+                                        <img src="./images/plants/3.png" alt="">
+                                    </div>
+                                    <div class="plants__block_text">
+                                        African Violet
+                                    </div>
+                                    <div class="plants__block_icons">
+                                        <span class="plants__shopping">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="auto" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_4_201)">
+                                                <path d="M14.294 16.8745H8.24077C5.65655 16.8745 3.55412 14.7721 3.55412 12.1879V7.38404C3.55412 4.98174 2.35676 2.75812 0.351225 1.43578C-0.00894369 1.19832 -0.108379 0.71388 0.129078 0.353711C0.366535 -0.00649689 0.850939 -0.105971 1.21119 0.131564C2.35606 0.886427 3.28487 1.88203 3.94905 3.0283C4.09258 3.1891 5.24995 4.41583 7.14726 4.41583H16.142C18.596 4.36994 20.5168 6.83265 19.8752 9.20136L18.8397 13.3283C18.3159 15.4163 16.4466 16.8745 14.294 16.8745ZM4.91926 5.53676C5.04912 6.13669 5.11634 6.75528 5.11634 7.38404V12.1879C5.11634 13.9107 6.51796 15.3123 8.24077 15.3123H14.294C15.7291 15.3123 16.9752 14.3401 17.3245 12.9482L18.3599 8.8212C18.7412 7.41372 17.5997 5.95082 16.142 5.97804H7.14722C6.28913 5.97804 5.54224 5.79304 4.91926 5.53676ZM7.85021 19.0226C7.85021 18.4833 7.41307 18.0462 6.87383 18.0462C5.57828 18.0978 5.57942 19.9479 6.87383 19.9989C7.41307 19.9989 7.85021 19.5618 7.85021 19.0226ZM15.6222 19.0226C15.6222 18.4833 15.1851 18.0462 14.6459 18.0462C13.3503 18.0978 13.3514 19.9479 14.6459 19.9989C15.1851 19.9989 15.6222 19.5618 15.6222 19.0226ZM16.9231 8.32137C16.9231 7.88996 16.5734 7.54026 16.142 7.54026H7.45966C6.42329 7.5815 6.42407 9.06158 7.45966 9.10248H16.142C16.5734 9.10248 16.9231 8.75277 16.9231 8.32137Z" fill="inherit"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_4_201">
+                                                <rect width="20" height="20" fill="white"/>
+                                                </clipPath>
+                                                </defs>
+                                                </svg>
+                                        </span>
+                                        <span class="plants__like">
+                                            <svg width="20" height="18" viewBox="0 0 20 18" fill="auto" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 17.8873C9.71527 17.8873 9.44077 17.7842 9.22684 17.5968C8.41888 16.8903 7.63992 16.2264 6.95267 15.6408L6.94916 15.6377C4.93423 13.9207 3.19427 12.4378 1.98364 10.9771C0.630341 9.34409 0 7.79578 0 6.10434C0 4.46097 0.563507 2.94485 1.58661 1.83508C2.62192 0.712189 4.04251 0.09375 5.58716 0.09375C6.74164 0.09375 7.79892 0.45874 8.72955 1.1785C9.19922 1.54181 9.62494 1.98645 10 2.5051C10.3752 1.98645 10.8008 1.54181 11.2706 1.1785C12.2012 0.45874 13.2585 0.09375 14.413 0.09375C15.9575 0.09375 17.3782 0.712189 18.4135 1.83508C19.4366 2.94485 20 4.46097 20 6.10434C20 7.79578 19.3698 9.34409 18.0165 10.9769C16.8059 12.4378 15.0661 13.9205 13.0515 15.6374C12.363 16.224 11.5828 16.8889 10.773 17.5971C10.5592 17.7842 10.2846 17.8873 10 17.8873ZM5.58716 1.26532C4.37363 1.26532 3.25882 1.74963 2.44781 2.62915C1.62476 3.52194 1.17142 4.75607 1.17142 6.10434C1.17142 7.52692 1.70013 8.79919 2.88559 10.2296C4.03137 11.6122 5.73563 13.0645 7.70889 14.7462L7.71255 14.7492C8.4024 15.3371 9.18442 16.0036 9.99832 16.7153C10.8171 16.0023 11.6003 15.3347 12.2916 14.7458C14.2647 13.0642 15.9688 11.6122 17.1146 10.2296C18.2999 8.79919 18.8286 7.52692 18.8286 6.10434C18.8286 4.75607 18.3752 3.52194 17.5522 2.62915C16.7413 1.74963 15.6264 1.26532 14.413 1.26532C13.524 1.26532 12.7078 1.54791 11.9872 2.10516C11.3449 2.60199 10.8975 3.23004 10.6352 3.66949C10.5003 3.89548 10.2629 4.03036 10 4.03036C9.73709 4.03036 9.49966 3.89548 9.36478 3.66949C9.10263 3.23004 8.65524 2.60199 8.01285 2.10516C7.29218 1.54791 6.47598 1.26532 5.58716 1.26532Z" fill="#3D3D3D"/>
+                                                </svg>
+                                        </span>
+                                        <span class="plants__search">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="auto" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.5656 16.0023C10.5704 19.1859 4.98549 18.3049 2.02729 14.6537C-0.827886 11.1285 -0.64932 6.04315 2.44811 2.82459C5.64856 -0.500733 10.6802 -0.94465 14.3277 1.78316C15.6345 2.76028 16.6104 4.00338 17.246 5.50808C17.8853 7.02152 18.0795 8.59614 17.8578 10.2201C17.6368 11.8366 16.9918 13.2769 15.9423 14.6212C16.0272 14.6768 16.1178 14.7167 16.1827 14.7816C17.3365 15.9305 18.4859 17.0836 19.6397 18.2325C19.9132 18.5047 20.0493 18.8219 19.9682 19.204C19.8071 19.9644 18.9018 20.2579 18.3211 19.7359C18.0489 19.4918 17.7985 19.2227 17.54 18.9642C16.5923 18.0171 15.6451 17.0693 14.6973 16.1221C14.658 16.0847 14.6168 16.0497 14.5656 16.0023ZM15.9529 8.98637C15.9629 5.12659 12.8468 2.00606 8.97825 2.00044C5.12035 1.99482 2.00669 5.09038 1.98983 8.94766C1.97297 12.8168 5.08289 15.9461 8.96326 15.9642C12.8055 15.9823 15.9429 12.8499 15.9529 8.98637Z" fill="#3D3D3D"/>
+                                                </svg>                                                    
+                                        </span>
+                                    </div>
+                                    <div class="plants__block_price">
+                                        $199.00
+                                    </div>
+                                </li>
+                                <li class="plants__block" data-price="">
+                                    <div class="plants__block_image">
+                                        <img src="./images/plants/4.png" alt="">
+                                    </div>
+                                    <div class="plants__block_text">
+                                        Beach Spider Lily
+                                    </div>
+                                    <div class="plants__block_icons">
+                                        <span class="plants__shopping">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="auto" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_4_201)">
+                                                <path d="M14.294 16.8745H8.24077C5.65655 16.8745 3.55412 14.7721 3.55412 12.1879V7.38404C3.55412 4.98174 2.35676 2.75812 0.351225 1.43578C-0.00894369 1.19832 -0.108379 0.71388 0.129078 0.353711C0.366535 -0.00649689 0.850939 -0.105971 1.21119 0.131564C2.35606 0.886427 3.28487 1.88203 3.94905 3.0283C4.09258 3.1891 5.24995 4.41583 7.14726 4.41583H16.142C18.596 4.36994 20.5168 6.83265 19.8752 9.20136L18.8397 13.3283C18.3159 15.4163 16.4466 16.8745 14.294 16.8745ZM4.91926 5.53676C5.04912 6.13669 5.11634 6.75528 5.11634 7.38404V12.1879C5.11634 13.9107 6.51796 15.3123 8.24077 15.3123H14.294C15.7291 15.3123 16.9752 14.3401 17.3245 12.9482L18.3599 8.8212C18.7412 7.41372 17.5997 5.95082 16.142 5.97804H7.14722C6.28913 5.97804 5.54224 5.79304 4.91926 5.53676ZM7.85021 19.0226C7.85021 18.4833 7.41307 18.0462 6.87383 18.0462C5.57828 18.0978 5.57942 19.9479 6.87383 19.9989C7.41307 19.9989 7.85021 19.5618 7.85021 19.0226ZM15.6222 19.0226C15.6222 18.4833 15.1851 18.0462 14.6459 18.0462C13.3503 18.0978 13.3514 19.9479 14.6459 19.9989C15.1851 19.9989 15.6222 19.5618 15.6222 19.0226ZM16.9231 8.32137C16.9231 7.88996 16.5734 7.54026 16.142 7.54026H7.45966C6.42329 7.5815 6.42407 9.06158 7.45966 9.10248H16.142C16.5734 9.10248 16.9231 8.75277 16.9231 8.32137Z" fill="inherit"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_4_201">
+                                                <rect width="20" height="20" fill="white"/>
+                                                </clipPath>
+                                                </defs>
+                                                </svg>
+                                        </span>
+                                        <span class="plants__like">
+                                            <svg width="20" height="18" viewBox="0 0 20 18" fill="auto" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 17.8873C9.71527 17.8873 9.44077 17.7842 9.22684 17.5968C8.41888 16.8903 7.63992 16.2264 6.95267 15.6408L6.94916 15.6377C4.93423 13.9207 3.19427 12.4378 1.98364 10.9771C0.630341 9.34409 0 7.79578 0 6.10434C0 4.46097 0.563507 2.94485 1.58661 1.83508C2.62192 0.712189 4.04251 0.09375 5.58716 0.09375C6.74164 0.09375 7.79892 0.45874 8.72955 1.1785C9.19922 1.54181 9.62494 1.98645 10 2.5051C10.3752 1.98645 10.8008 1.54181 11.2706 1.1785C12.2012 0.45874 13.2585 0.09375 14.413 0.09375C15.9575 0.09375 17.3782 0.712189 18.4135 1.83508C19.4366 2.94485 20 4.46097 20 6.10434C20 7.79578 19.3698 9.34409 18.0165 10.9769C16.8059 12.4378 15.0661 13.9205 13.0515 15.6374C12.363 16.224 11.5828 16.8889 10.773 17.5971C10.5592 17.7842 10.2846 17.8873 10 17.8873ZM5.58716 1.26532C4.37363 1.26532 3.25882 1.74963 2.44781 2.62915C1.62476 3.52194 1.17142 4.75607 1.17142 6.10434C1.17142 7.52692 1.70013 8.79919 2.88559 10.2296C4.03137 11.6122 5.73563 13.0645 7.70889 14.7462L7.71255 14.7492C8.4024 15.3371 9.18442 16.0036 9.99832 16.7153C10.8171 16.0023 11.6003 15.3347 12.2916 14.7458C14.2647 13.0642 15.9688 11.6122 17.1146 10.2296C18.2999 8.79919 18.8286 7.52692 18.8286 6.10434C18.8286 4.75607 18.3752 3.52194 17.5522 2.62915C16.7413 1.74963 15.6264 1.26532 14.413 1.26532C13.524 1.26532 12.7078 1.54791 11.9872 2.10516C11.3449 2.60199 10.8975 3.23004 10.6352 3.66949C10.5003 3.89548 10.2629 4.03036 10 4.03036C9.73709 4.03036 9.49966 3.89548 9.36478 3.66949C9.10263 3.23004 8.65524 2.60199 8.01285 2.10516C7.29218 1.54791 6.47598 1.26532 5.58716 1.26532Z" fill="#3D3D3D"/>
+                                                </svg>
+                                        </span>
+                                        <span class="plants__search">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="auto" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.5656 16.0023C10.5704 19.1859 4.98549 18.3049 2.02729 14.6537C-0.827886 11.1285 -0.64932 6.04315 2.44811 2.82459C5.64856 -0.500733 10.6802 -0.94465 14.3277 1.78316C15.6345 2.76028 16.6104 4.00338 17.246 5.50808C17.8853 7.02152 18.0795 8.59614 17.8578 10.2201C17.6368 11.8366 16.9918 13.2769 15.9423 14.6212C16.0272 14.6768 16.1178 14.7167 16.1827 14.7816C17.3365 15.9305 18.4859 17.0836 19.6397 18.2325C19.9132 18.5047 20.0493 18.8219 19.9682 19.204C19.8071 19.9644 18.9018 20.2579 18.3211 19.7359C18.0489 19.4918 17.7985 19.2227 17.54 18.9642C16.5923 18.0171 15.6451 17.0693 14.6973 16.1221C14.658 16.0847 14.6168 16.0497 14.5656 16.0023ZM15.9529 8.98637C15.9629 5.12659 12.8468 2.00606 8.97825 2.00044C5.12035 1.99482 2.00669 5.09038 1.98983 8.94766C1.97297 12.8168 5.08289 15.9461 8.96326 15.9642C12.8055 15.9823 15.9429 12.8499 15.9529 8.98637Z" fill="#3D3D3D"/>
+                                                </svg>                                                    
+                                        </span>
+                                    </div>
+                                    <div class="plants__block_price">
+                                        $129.00
+                                    </div>
+                                </li>
+                                <li class="plants__block" data-price="">
+                                    <div class="plants__block_image">
+                                        <img src="./images/plants/5.png" alt="">
+                                    </div>
+                                    <div class="plants__block_text">
+                                        Blushing Bromeliad
+                                    </div>
+                                    <div class="plants__block_icons">
+                                        <span class="plants__shopping">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="auto" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_4_201)">
+                                                <path d="M14.294 16.8745H8.24077C5.65655 16.8745 3.55412 14.7721 3.55412 12.1879V7.38404C3.55412 4.98174 2.35676 2.75812 0.351225 1.43578C-0.00894369 1.19832 -0.108379 0.71388 0.129078 0.353711C0.366535 -0.00649689 0.850939 -0.105971 1.21119 0.131564C2.35606 0.886427 3.28487 1.88203 3.94905 3.0283C4.09258 3.1891 5.24995 4.41583 7.14726 4.41583H16.142C18.596 4.36994 20.5168 6.83265 19.8752 9.20136L18.8397 13.3283C18.3159 15.4163 16.4466 16.8745 14.294 16.8745ZM4.91926 5.53676C5.04912 6.13669 5.11634 6.75528 5.11634 7.38404V12.1879C5.11634 13.9107 6.51796 15.3123 8.24077 15.3123H14.294C15.7291 15.3123 16.9752 14.3401 17.3245 12.9482L18.3599 8.8212C18.7412 7.41372 17.5997 5.95082 16.142 5.97804H7.14722C6.28913 5.97804 5.54224 5.79304 4.91926 5.53676ZM7.85021 19.0226C7.85021 18.4833 7.41307 18.0462 6.87383 18.0462C5.57828 18.0978 5.57942 19.9479 6.87383 19.9989C7.41307 19.9989 7.85021 19.5618 7.85021 19.0226ZM15.6222 19.0226C15.6222 18.4833 15.1851 18.0462 14.6459 18.0462C13.3503 18.0978 13.3514 19.9479 14.6459 19.9989C15.1851 19.9989 15.6222 19.5618 15.6222 19.0226ZM16.9231 8.32137C16.9231 7.88996 16.5734 7.54026 16.142 7.54026H7.45966C6.42329 7.5815 6.42407 9.06158 7.45966 9.10248H16.142C16.5734 9.10248 16.9231 8.75277 16.9231 8.32137Z" fill="inherit"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_4_201">
+                                                <rect width="20" height="20" fill="white"/>
+                                                </clipPath>
+                                                </defs>
+                                                </svg>
+                                        </span>
+                                        <span class="plants__like">
+                                            <svg width="20" height="18" viewBox="0 0 20 18" fill="auto" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 17.8873C9.71527 17.8873 9.44077 17.7842 9.22684 17.5968C8.41888 16.8903 7.63992 16.2264 6.95267 15.6408L6.94916 15.6377C4.93423 13.9207 3.19427 12.4378 1.98364 10.9771C0.630341 9.34409 0 7.79578 0 6.10434C0 4.46097 0.563507 2.94485 1.58661 1.83508C2.62192 0.712189 4.04251 0.09375 5.58716 0.09375C6.74164 0.09375 7.79892 0.45874 8.72955 1.1785C9.19922 1.54181 9.62494 1.98645 10 2.5051C10.3752 1.98645 10.8008 1.54181 11.2706 1.1785C12.2012 0.45874 13.2585 0.09375 14.413 0.09375C15.9575 0.09375 17.3782 0.712189 18.4135 1.83508C19.4366 2.94485 20 4.46097 20 6.10434C20 7.79578 19.3698 9.34409 18.0165 10.9769C16.8059 12.4378 15.0661 13.9205 13.0515 15.6374C12.363 16.224 11.5828 16.8889 10.773 17.5971C10.5592 17.7842 10.2846 17.8873 10 17.8873ZM5.58716 1.26532C4.37363 1.26532 3.25882 1.74963 2.44781 2.62915C1.62476 3.52194 1.17142 4.75607 1.17142 6.10434C1.17142 7.52692 1.70013 8.79919 2.88559 10.2296C4.03137 11.6122 5.73563 13.0645 7.70889 14.7462L7.71255 14.7492C8.4024 15.3371 9.18442 16.0036 9.99832 16.7153C10.8171 16.0023 11.6003 15.3347 12.2916 14.7458C14.2647 13.0642 15.9688 11.6122 17.1146 10.2296C18.2999 8.79919 18.8286 7.52692 18.8286 6.10434C18.8286 4.75607 18.3752 3.52194 17.5522 2.62915C16.7413 1.74963 15.6264 1.26532 14.413 1.26532C13.524 1.26532 12.7078 1.54791 11.9872 2.10516C11.3449 2.60199 10.8975 3.23004 10.6352 3.66949C10.5003 3.89548 10.2629 4.03036 10 4.03036C9.73709 4.03036 9.49966 3.89548 9.36478 3.66949C9.10263 3.23004 8.65524 2.60199 8.01285 2.10516C7.29218 1.54791 6.47598 1.26532 5.58716 1.26532Z" fill="#3D3D3D"/>
+                                                </svg>
+                                        </span>
+                                        <span class="plants__search">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="auto" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.5656 16.0023C10.5704 19.1859 4.98549 18.3049 2.02729 14.6537C-0.827886 11.1285 -0.64932 6.04315 2.44811 2.82459C5.64856 -0.500733 10.6802 -0.94465 14.3277 1.78316C15.6345 2.76028 16.6104 4.00338 17.246 5.50808C17.8853 7.02152 18.0795 8.59614 17.8578 10.2201C17.6368 11.8366 16.9918 13.2769 15.9423 14.6212C16.0272 14.6768 16.1178 14.7167 16.1827 14.7816C17.3365 15.9305 18.4859 17.0836 19.6397 18.2325C19.9132 18.5047 20.0493 18.8219 19.9682 19.204C19.8071 19.9644 18.9018 20.2579 18.3211 19.7359C18.0489 19.4918 17.7985 19.2227 17.54 18.9642C16.5923 18.0171 15.6451 17.0693 14.6973 16.1221C14.658 16.0847 14.6168 16.0497 14.5656 16.0023ZM15.9529 8.98637C15.9629 5.12659 12.8468 2.00606 8.97825 2.00044C5.12035 1.99482 2.00669 5.09038 1.98983 8.94766C1.97297 12.8168 5.08289 15.9461 8.96326 15.9642C12.8055 15.9823 15.9429 12.8499 15.9529 8.98637Z" fill="#3D3D3D"/>
+                                                </svg>                                                    
+                                        </span>
+                                    </div>
+                                    <div class="plants__block_price">
+                                        $139.00
+                                    </div>
+                                </li>
+                                <li class="plants__block" data-price="">
+                                    <div class="plants__block_image">
+                                        <img src="./images/plants/6.png" alt="">
+                                    </div>
+                                    <div class="plants__block_text">
+                                        Aliminum Plant
+                                    </div>
+                                    <div class="plants__block_icons">
+                                        <span class="plants__shopping">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="auto" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_4_201)">
+                                                <path d="M14.294 16.8745H8.24077C5.65655 16.8745 3.55412 14.7721 3.55412 12.1879V7.38404C3.55412 4.98174 2.35676 2.75812 0.351225 1.43578C-0.00894369 1.19832 -0.108379 0.71388 0.129078 0.353711C0.366535 -0.00649689 0.850939 -0.105971 1.21119 0.131564C2.35606 0.886427 3.28487 1.88203 3.94905 3.0283C4.09258 3.1891 5.24995 4.41583 7.14726 4.41583H16.142C18.596 4.36994 20.5168 6.83265 19.8752 9.20136L18.8397 13.3283C18.3159 15.4163 16.4466 16.8745 14.294 16.8745ZM4.91926 5.53676C5.04912 6.13669 5.11634 6.75528 5.11634 7.38404V12.1879C5.11634 13.9107 6.51796 15.3123 8.24077 15.3123H14.294C15.7291 15.3123 16.9752 14.3401 17.3245 12.9482L18.3599 8.8212C18.7412 7.41372 17.5997 5.95082 16.142 5.97804H7.14722C6.28913 5.97804 5.54224 5.79304 4.91926 5.53676ZM7.85021 19.0226C7.85021 18.4833 7.41307 18.0462 6.87383 18.0462C5.57828 18.0978 5.57942 19.9479 6.87383 19.9989C7.41307 19.9989 7.85021 19.5618 7.85021 19.0226ZM15.6222 19.0226C15.6222 18.4833 15.1851 18.0462 14.6459 18.0462C13.3503 18.0978 13.3514 19.9479 14.6459 19.9989C15.1851 19.9989 15.6222 19.5618 15.6222 19.0226ZM16.9231 8.32137C16.9231 7.88996 16.5734 7.54026 16.142 7.54026H7.45966C6.42329 7.5815 6.42407 9.06158 7.45966 9.10248H16.142C16.5734 9.10248 16.9231 8.75277 16.9231 8.32137Z" fill="inherit"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_4_201">
+                                                <rect width="20" height="20" fill="white"/>
+                                                </clipPath>
+                                                </defs>
+                                                </svg>
+                                        </span>
+                                        <span class="plants__like">
+                                            <svg width="20" height="18" viewBox="0 0 20 18" fill="auto" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 17.8873C9.71527 17.8873 9.44077 17.7842 9.22684 17.5968C8.41888 16.8903 7.63992 16.2264 6.95267 15.6408L6.94916 15.6377C4.93423 13.9207 3.19427 12.4378 1.98364 10.9771C0.630341 9.34409 0 7.79578 0 6.10434C0 4.46097 0.563507 2.94485 1.58661 1.83508C2.62192 0.712189 4.04251 0.09375 5.58716 0.09375C6.74164 0.09375 7.79892 0.45874 8.72955 1.1785C9.19922 1.54181 9.62494 1.98645 10 2.5051C10.3752 1.98645 10.8008 1.54181 11.2706 1.1785C12.2012 0.45874 13.2585 0.09375 14.413 0.09375C15.9575 0.09375 17.3782 0.712189 18.4135 1.83508C19.4366 2.94485 20 4.46097 20 6.10434C20 7.79578 19.3698 9.34409 18.0165 10.9769C16.8059 12.4378 15.0661 13.9205 13.0515 15.6374C12.363 16.224 11.5828 16.8889 10.773 17.5971C10.5592 17.7842 10.2846 17.8873 10 17.8873ZM5.58716 1.26532C4.37363 1.26532 3.25882 1.74963 2.44781 2.62915C1.62476 3.52194 1.17142 4.75607 1.17142 6.10434C1.17142 7.52692 1.70013 8.79919 2.88559 10.2296C4.03137 11.6122 5.73563 13.0645 7.70889 14.7462L7.71255 14.7492C8.4024 15.3371 9.18442 16.0036 9.99832 16.7153C10.8171 16.0023 11.6003 15.3347 12.2916 14.7458C14.2647 13.0642 15.9688 11.6122 17.1146 10.2296C18.2999 8.79919 18.8286 7.52692 18.8286 6.10434C18.8286 4.75607 18.3752 3.52194 17.5522 2.62915C16.7413 1.74963 15.6264 1.26532 14.413 1.26532C13.524 1.26532 12.7078 1.54791 11.9872 2.10516C11.3449 2.60199 10.8975 3.23004 10.6352 3.66949C10.5003 3.89548 10.2629 4.03036 10 4.03036C9.73709 4.03036 9.49966 3.89548 9.36478 3.66949C9.10263 3.23004 8.65524 2.60199 8.01285 2.10516C7.29218 1.54791 6.47598 1.26532 5.58716 1.26532Z" fill="#3D3D3D"/>
+                                                </svg>
+                                        </span>
+                                        <span class="plants__search">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="auto" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.5656 16.0023C10.5704 19.1859 4.98549 18.3049 2.02729 14.6537C-0.827886 11.1285 -0.64932 6.04315 2.44811 2.82459C5.64856 -0.500733 10.6802 -0.94465 14.3277 1.78316C15.6345 2.76028 16.6104 4.00338 17.246 5.50808C17.8853 7.02152 18.0795 8.59614 17.8578 10.2201C17.6368 11.8366 16.9918 13.2769 15.9423 14.6212C16.0272 14.6768 16.1178 14.7167 16.1827 14.7816C17.3365 15.9305 18.4859 17.0836 19.6397 18.2325C19.9132 18.5047 20.0493 18.8219 19.9682 19.204C19.8071 19.9644 18.9018 20.2579 18.3211 19.7359C18.0489 19.4918 17.7985 19.2227 17.54 18.9642C16.5923 18.0171 15.6451 17.0693 14.6973 16.1221C14.658 16.0847 14.6168 16.0497 14.5656 16.0023ZM15.9529 8.98637C15.9629 5.12659 12.8468 2.00606 8.97825 2.00044C5.12035 1.99482 2.00669 5.09038 1.98983 8.94766C1.97297 12.8168 5.08289 15.9461 8.96326 15.9642C12.8055 15.9823 15.9429 12.8499 15.9529 8.98637Z" fill="#3D3D3D"/>
+                                                </svg>                                                    
+                                        </span>
+                                    </div>
+                                    <div class="plants__block_price">
+                                        $179.00
+                                    </div>
+                                </li>
+                                <li class="plants__block" data-price="">
+                                    <div class="plants__block_image">
+                                        <img src="./images/plants/7.png" alt="">
+                                    </div>
+                                    <div class="plants__block_text">
+                                        Bird's nest Fern
+                                    </div>
+                                    <div class="plants__block_icons">
+                                        <span class="plants__shopping">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="auto" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_4_201)">
+                                                <path d="M14.294 16.8745H8.24077C5.65655 16.8745 3.55412 14.7721 3.55412 12.1879V7.38404C3.55412 4.98174 2.35676 2.75812 0.351225 1.43578C-0.00894369 1.19832 -0.108379 0.71388 0.129078 0.353711C0.366535 -0.00649689 0.850939 -0.105971 1.21119 0.131564C2.35606 0.886427 3.28487 1.88203 3.94905 3.0283C4.09258 3.1891 5.24995 4.41583 7.14726 4.41583H16.142C18.596 4.36994 20.5168 6.83265 19.8752 9.20136L18.8397 13.3283C18.3159 15.4163 16.4466 16.8745 14.294 16.8745ZM4.91926 5.53676C5.04912 6.13669 5.11634 6.75528 5.11634 7.38404V12.1879C5.11634 13.9107 6.51796 15.3123 8.24077 15.3123H14.294C15.7291 15.3123 16.9752 14.3401 17.3245 12.9482L18.3599 8.8212C18.7412 7.41372 17.5997 5.95082 16.142 5.97804H7.14722C6.28913 5.97804 5.54224 5.79304 4.91926 5.53676ZM7.85021 19.0226C7.85021 18.4833 7.41307 18.0462 6.87383 18.0462C5.57828 18.0978 5.57942 19.9479 6.87383 19.9989C7.41307 19.9989 7.85021 19.5618 7.85021 19.0226ZM15.6222 19.0226C15.6222 18.4833 15.1851 18.0462 14.6459 18.0462C13.3503 18.0978 13.3514 19.9479 14.6459 19.9989C15.1851 19.9989 15.6222 19.5618 15.6222 19.0226ZM16.9231 8.32137C16.9231 7.88996 16.5734 7.54026 16.142 7.54026H7.45966C6.42329 7.5815 6.42407 9.06158 7.45966 9.10248H16.142C16.5734 9.10248 16.9231 8.75277 16.9231 8.32137Z" fill="inherit"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_4_201">
+                                                <rect width="20" height="20" fill="white"/>
+                                                </clipPath>
+                                                </defs>
+                                                </svg>
+                                        </span>
+                                        <span class="plants__like">
+                                            <svg width="20" height="18" viewBox="0 0 20 18" fill="auto" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 17.8873C9.71527 17.8873 9.44077 17.7842 9.22684 17.5968C8.41888 16.8903 7.63992 16.2264 6.95267 15.6408L6.94916 15.6377C4.93423 13.9207 3.19427 12.4378 1.98364 10.9771C0.630341 9.34409 0 7.79578 0 6.10434C0 4.46097 0.563507 2.94485 1.58661 1.83508C2.62192 0.712189 4.04251 0.09375 5.58716 0.09375C6.74164 0.09375 7.79892 0.45874 8.72955 1.1785C9.19922 1.54181 9.62494 1.98645 10 2.5051C10.3752 1.98645 10.8008 1.54181 11.2706 1.1785C12.2012 0.45874 13.2585 0.09375 14.413 0.09375C15.9575 0.09375 17.3782 0.712189 18.4135 1.83508C19.4366 2.94485 20 4.46097 20 6.10434C20 7.79578 19.3698 9.34409 18.0165 10.9769C16.8059 12.4378 15.0661 13.9205 13.0515 15.6374C12.363 16.224 11.5828 16.8889 10.773 17.5971C10.5592 17.7842 10.2846 17.8873 10 17.8873ZM5.58716 1.26532C4.37363 1.26532 3.25882 1.74963 2.44781 2.62915C1.62476 3.52194 1.17142 4.75607 1.17142 6.10434C1.17142 7.52692 1.70013 8.79919 2.88559 10.2296C4.03137 11.6122 5.73563 13.0645 7.70889 14.7462L7.71255 14.7492C8.4024 15.3371 9.18442 16.0036 9.99832 16.7153C10.8171 16.0023 11.6003 15.3347 12.2916 14.7458C14.2647 13.0642 15.9688 11.6122 17.1146 10.2296C18.2999 8.79919 18.8286 7.52692 18.8286 6.10434C18.8286 4.75607 18.3752 3.52194 17.5522 2.62915C16.7413 1.74963 15.6264 1.26532 14.413 1.26532C13.524 1.26532 12.7078 1.54791 11.9872 2.10516C11.3449 2.60199 10.8975 3.23004 10.6352 3.66949C10.5003 3.89548 10.2629 4.03036 10 4.03036C9.73709 4.03036 9.49966 3.89548 9.36478 3.66949C9.10263 3.23004 8.65524 2.60199 8.01285 2.10516C7.29218 1.54791 6.47598 1.26532 5.58716 1.26532Z" fill="#3D3D3D"/>
+                                                </svg>
+                                        </span>
+                                        <span class="plants__search">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="auto" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.5656 16.0023C10.5704 19.1859 4.98549 18.3049 2.02729 14.6537C-0.827886 11.1285 -0.64932 6.04315 2.44811 2.82459C5.64856 -0.500733 10.6802 -0.94465 14.3277 1.78316C15.6345 2.76028 16.6104 4.00338 17.246 5.50808C17.8853 7.02152 18.0795 8.59614 17.8578 10.2201C17.6368 11.8366 16.9918 13.2769 15.9423 14.6212C16.0272 14.6768 16.1178 14.7167 16.1827 14.7816C17.3365 15.9305 18.4859 17.0836 19.6397 18.2325C19.9132 18.5047 20.0493 18.8219 19.9682 19.204C19.8071 19.9644 18.9018 20.2579 18.3211 19.7359C18.0489 19.4918 17.7985 19.2227 17.54 18.9642C16.5923 18.0171 15.6451 17.0693 14.6973 16.1221C14.658 16.0847 14.6168 16.0497 14.5656 16.0023ZM15.9529 8.98637C15.9629 5.12659 12.8468 2.00606 8.97825 2.00044C5.12035 1.99482 2.00669 5.09038 1.98983 8.94766C1.97297 12.8168 5.08289 15.9461 8.96326 15.9642C12.8055 15.9823 15.9429 12.8499 15.9529 8.98637Z" fill="#3D3D3D"/>
+                                                </svg>                                                    
+                                        </span>
+                                    </div>
+                                    <div class="plants__block_price">
+                                        $99.00
+                                    </div>
+                                </li>
+                                <li class="plants__block" data-price="">
+                                    <div class="plants__block_image">
+                                        <img src="./images/plants/8.png" alt="">
+                                    </div>
+                                    <div class="plants__block_text">
+                                        Broadleaf Lady Palm
+                                    </div>
+                                    <div class="plants__block_icons">
+                                        <span class="plants__shopping">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="auto" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_4_201)">
+                                                <path d="M14.294 16.8745H8.24077C5.65655 16.8745 3.55412 14.7721 3.55412 12.1879V7.38404C3.55412 4.98174 2.35676 2.75812 0.351225 1.43578C-0.00894369 1.19832 -0.108379 0.71388 0.129078 0.353711C0.366535 -0.00649689 0.850939 -0.105971 1.21119 0.131564C2.35606 0.886427 3.28487 1.88203 3.94905 3.0283C4.09258 3.1891 5.24995 4.41583 7.14726 4.41583H16.142C18.596 4.36994 20.5168 6.83265 19.8752 9.20136L18.8397 13.3283C18.3159 15.4163 16.4466 16.8745 14.294 16.8745ZM4.91926 5.53676C5.04912 6.13669 5.11634 6.75528 5.11634 7.38404V12.1879C5.11634 13.9107 6.51796 15.3123 8.24077 15.3123H14.294C15.7291 15.3123 16.9752 14.3401 17.3245 12.9482L18.3599 8.8212C18.7412 7.41372 17.5997 5.95082 16.142 5.97804H7.14722C6.28913 5.97804 5.54224 5.79304 4.91926 5.53676ZM7.85021 19.0226C7.85021 18.4833 7.41307 18.0462 6.87383 18.0462C5.57828 18.0978 5.57942 19.9479 6.87383 19.9989C7.41307 19.9989 7.85021 19.5618 7.85021 19.0226ZM15.6222 19.0226C15.6222 18.4833 15.1851 18.0462 14.6459 18.0462C13.3503 18.0978 13.3514 19.9479 14.6459 19.9989C15.1851 19.9989 15.6222 19.5618 15.6222 19.0226ZM16.9231 8.32137C16.9231 7.88996 16.5734 7.54026 16.142 7.54026H7.45966C6.42329 7.5815 6.42407 9.06158 7.45966 9.10248H16.142C16.5734 9.10248 16.9231 8.75277 16.9231 8.32137Z" fill="inherit"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_4_201">
+                                                <rect width="20" height="20" fill="white"/>
+                                                </clipPath>
+                                                </defs>
+                                                </svg>
+                                        </span>
+                                        <span class="plants__like">
+                                            <svg width="20" height="18" viewBox="0 0 20 18" fill="auto" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 17.8873C9.71527 17.8873 9.44077 17.7842 9.22684 17.5968C8.41888 16.8903 7.63992 16.2264 6.95267 15.6408L6.94916 15.6377C4.93423 13.9207 3.19427 12.4378 1.98364 10.9771C0.630341 9.34409 0 7.79578 0 6.10434C0 4.46097 0.563507 2.94485 1.58661 1.83508C2.62192 0.712189 4.04251 0.09375 5.58716 0.09375C6.74164 0.09375 7.79892 0.45874 8.72955 1.1785C9.19922 1.54181 9.62494 1.98645 10 2.5051C10.3752 1.98645 10.8008 1.54181 11.2706 1.1785C12.2012 0.45874 13.2585 0.09375 14.413 0.09375C15.9575 0.09375 17.3782 0.712189 18.4135 1.83508C19.4366 2.94485 20 4.46097 20 6.10434C20 7.79578 19.3698 9.34409 18.0165 10.9769C16.8059 12.4378 15.0661 13.9205 13.0515 15.6374C12.363 16.224 11.5828 16.8889 10.773 17.5971C10.5592 17.7842 10.2846 17.8873 10 17.8873ZM5.58716 1.26532C4.37363 1.26532 3.25882 1.74963 2.44781 2.62915C1.62476 3.52194 1.17142 4.75607 1.17142 6.10434C1.17142 7.52692 1.70013 8.79919 2.88559 10.2296C4.03137 11.6122 5.73563 13.0645 7.70889 14.7462L7.71255 14.7492C8.4024 15.3371 9.18442 16.0036 9.99832 16.7153C10.8171 16.0023 11.6003 15.3347 12.2916 14.7458C14.2647 13.0642 15.9688 11.6122 17.1146 10.2296C18.2999 8.79919 18.8286 7.52692 18.8286 6.10434C18.8286 4.75607 18.3752 3.52194 17.5522 2.62915C16.7413 1.74963 15.6264 1.26532 14.413 1.26532C13.524 1.26532 12.7078 1.54791 11.9872 2.10516C11.3449 2.60199 10.8975 3.23004 10.6352 3.66949C10.5003 3.89548 10.2629 4.03036 10 4.03036C9.73709 4.03036 9.49966 3.89548 9.36478 3.66949C9.10263 3.23004 8.65524 2.60199 8.01285 2.10516C7.29218 1.54791 6.47598 1.26532 5.58716 1.26532Z" fill="#3D3D3D"/>
+                                                </svg>
+                                        </span>
+                                        <span class="plants__search">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="auto" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.5656 16.0023C10.5704 19.1859 4.98549 18.3049 2.02729 14.6537C-0.827886 11.1285 -0.64932 6.04315 2.44811 2.82459C5.64856 -0.500733 10.6802 -0.94465 14.3277 1.78316C15.6345 2.76028 16.6104 4.00338 17.246 5.50808C17.8853 7.02152 18.0795 8.59614 17.8578 10.2201C17.6368 11.8366 16.9918 13.2769 15.9423 14.6212C16.0272 14.6768 16.1178 14.7167 16.1827 14.7816C17.3365 15.9305 18.4859 17.0836 19.6397 18.2325C19.9132 18.5047 20.0493 18.8219 19.9682 19.204C19.8071 19.9644 18.9018 20.2579 18.3211 19.7359C18.0489 19.4918 17.7985 19.2227 17.54 18.9642C16.5923 18.0171 15.6451 17.0693 14.6973 16.1221C14.658 16.0847 14.6168 16.0497 14.5656 16.0023ZM15.9529 8.98637C15.9629 5.12659 12.8468 2.00606 8.97825 2.00044C5.12035 1.99482 2.00669 5.09038 1.98983 8.94766C1.97297 12.8168 5.08289 15.9461 8.96326 15.9642C12.8055 15.9823 15.9429 12.8499 15.9529 8.98637Z" fill="#3D3D3D"/>
+                                                </svg>                                                    
+                                        </span>
+                                    </div>
+                                    <div class="plants__block_price">
+                                        $59.00
+                                    </div>
+                                </li>
+                                <li class="plants__block" data-price="">
+                                    <div class="plants__block_image">
+                                        <img src="./images/plants/9.png" alt="">
+                                    </div>
+                                    <div class="plants__block_text">
+                                        chinese Evergreen
+                                    </div>
+                                    <div class="plants__block_icons">
+                                        <span class="plants__shopping">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="auto" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_4_201)">
+                                                <path d="M14.294 16.8745H8.24077C5.65655 16.8745 3.55412 14.7721 3.55412 12.1879V7.38404C3.55412 4.98174 2.35676 2.75812 0.351225 1.43578C-0.00894369 1.19832 -0.108379 0.71388 0.129078 0.353711C0.366535 -0.00649689 0.850939 -0.105971 1.21119 0.131564C2.35606 0.886427 3.28487 1.88203 3.94905 3.0283C4.09258 3.1891 5.24995 4.41583 7.14726 4.41583H16.142C18.596 4.36994 20.5168 6.83265 19.8752 9.20136L18.8397 13.3283C18.3159 15.4163 16.4466 16.8745 14.294 16.8745ZM4.91926 5.53676C5.04912 6.13669 5.11634 6.75528 5.11634 7.38404V12.1879C5.11634 13.9107 6.51796 15.3123 8.24077 15.3123H14.294C15.7291 15.3123 16.9752 14.3401 17.3245 12.9482L18.3599 8.8212C18.7412 7.41372 17.5997 5.95082 16.142 5.97804H7.14722C6.28913 5.97804 5.54224 5.79304 4.91926 5.53676ZM7.85021 19.0226C7.85021 18.4833 7.41307 18.0462 6.87383 18.0462C5.57828 18.0978 5.57942 19.9479 6.87383 19.9989C7.41307 19.9989 7.85021 19.5618 7.85021 19.0226ZM15.6222 19.0226C15.6222 18.4833 15.1851 18.0462 14.6459 18.0462C13.3503 18.0978 13.3514 19.9479 14.6459 19.9989C15.1851 19.9989 15.6222 19.5618 15.6222 19.0226ZM16.9231 8.32137C16.9231 7.88996 16.5734 7.54026 16.142 7.54026H7.45966C6.42329 7.5815 6.42407 9.06158 7.45966 9.10248H16.142C16.5734 9.10248 16.9231 8.75277 16.9231 8.32137Z" fill="#3D3D3D"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_4_201">
+                                                <rect width="20" height="20" fill="white"/>
+                                                </clipPath>
+                                                </defs>
+                                                </svg>
+                                        </span>
+                                        <span class="plants__like">
+                                            <svg width="20" height="18" viewBox="0 0 20 18" fill="auto" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 17.8873C9.71527 17.8873 9.44077 17.7842 9.22684 17.5968C8.41888 16.8903 7.63992 16.2264 6.95267 15.6408L6.94916 15.6377C4.93423 13.9207 3.19427 12.4378 1.98364 10.9771C0.630341 9.34409 0 7.79578 0 6.10434C0 4.46097 0.563507 2.94485 1.58661 1.83508C2.62192 0.712189 4.04251 0.09375 5.58716 0.09375C6.74164 0.09375 7.79892 0.45874 8.72955 1.1785C9.19922 1.54181 9.62494 1.98645 10 2.5051C10.3752 1.98645 10.8008 1.54181 11.2706 1.1785C12.2012 0.45874 13.2585 0.09375 14.413 0.09375C15.9575 0.09375 17.3782 0.712189 18.4135 1.83508C19.4366 2.94485 20 4.46097 20 6.10434C20 7.79578 19.3698 9.34409 18.0165 10.9769C16.8059 12.4378 15.0661 13.9205 13.0515 15.6374C12.363 16.224 11.5828 16.8889 10.773 17.5971C10.5592 17.7842 10.2846 17.8873 10 17.8873ZM5.58716 1.26532C4.37363 1.26532 3.25882 1.74963 2.44781 2.62915C1.62476 3.52194 1.17142 4.75607 1.17142 6.10434C1.17142 7.52692 1.70013 8.79919 2.88559 10.2296C4.03137 11.6122 5.73563 13.0645 7.70889 14.7462L7.71255 14.7492C8.4024 15.3371 9.18442 16.0036 9.99832 16.7153C10.8171 16.0023 11.6003 15.3347 12.2916 14.7458C14.2647 13.0642 15.9688 11.6122 17.1146 10.2296C18.2999 8.79919 18.8286 7.52692 18.8286 6.10434C18.8286 4.75607 18.3752 3.52194 17.5522 2.62915C16.7413 1.74963 15.6264 1.26532 14.413 1.26532C13.524 1.26532 12.7078 1.54791 11.9872 2.10516C11.3449 2.60199 10.8975 3.23004 10.6352 3.66949C10.5003 3.89548 10.2629 4.03036 10 4.03036C9.73709 4.03036 9.49966 3.89548 9.36478 3.66949C9.10263 3.23004 8.65524 2.60199 8.01285 2.10516C7.29218 1.54791 6.47598 1.26532 5.58716 1.26532Z" fill="#3D3D3D"/>
+                                                </svg>
+                                        </span>
+                                        <span class="plants__search">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="auto" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.5656 16.0023C10.5704 19.1859 4.98549 18.3049 2.02729 14.6537C-0.827886 11.1285 -0.64932 6.04315 2.44811 2.82459C5.64856 -0.500733 10.6802 -0.94465 14.3277 1.78316C15.6345 2.76028 16.6104 4.00338 17.246 5.50808C17.8853 7.02152 18.0795 8.59614 17.8578 10.2201C17.6368 11.8366 16.9918 13.2769 15.9423 14.6212C16.0272 14.6768 16.1178 14.7167 16.1827 14.7816C17.3365 15.9305 18.4859 17.0836 19.6397 18.2325C19.9132 18.5047 20.0493 18.8219 19.9682 19.204C19.8071 19.9644 18.9018 20.2579 18.3211 19.7359C18.0489 19.4918 17.7985 19.2227 17.54 18.9642C16.5923 18.0171 15.6451 17.0693 14.6973 16.1221C14.658 16.0847 14.6168 16.0497 14.5656 16.0023ZM15.9529 8.98637C15.9629 5.12659 12.8468 2.00606 8.97825 2.00044C5.12035 1.99482 2.00669 5.09038 1.98983 8.94766C1.97297 12.8168 5.08289 15.9461 8.96326 15.9642C12.8055 15.9823 15.9429 12.8499 15.9529 8.98637Z" fill="#3D3D3D"/>
+                                                </svg>                                                    
+                                        </span>
+                                    </div>
+                                    <div class="plants__block_price">
+                                        $39.00
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="plants__pagination" >
+                          <div class="plants__pagination_block default__block">
+                            <button class="plants__number first">
+                                1
+                            </button>
+                            <button class="plants__number second">
+                                2
+                            </button>
+                            <button class="plants__number third">
+                                3
+                            </button>
+                            <button class="plants__number fourth">
+                                4
+                            </button>
+                          </div>
+                          <div class="plants__pagination_block next__block">
+                            <button class="plants__number fifth">
+                                5
+                            </button>
+                            <button class="plants__number sixth">
+                                6
+                            </button>
+                            <button class="plants__number seventh">
+                                7
+                            </button>
+                          </div>
+                          <div class="plants__pagination_icon">
+                            <button class="plants__next">
+                                <img src="./images/plants/Stroke 1.svg" alt="">
+                            </button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="examples">
+                <div class="examples__container">
+                    <div class="examples__body">
+                        <div class="examples__block">
+                            <div class="examples__image">
+                                <img src="./images/examples/image 14.png" alt="">
+                            </div>
+                            <div class="examples__content">
+                                <div class="examples__title">
+                                    Summer Cactus <br> & Succulents
+                                </div>
+                                <div class="examples__subtitle">
+                                    We are an online plant shop offering a wide range of cheap and trendy plants
+                                </div>
+                                <button class="examples__button">
+                                    Find more
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.8126 8.79419H3.56258" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M10.2748 4.27587C10.2748 4.27587 14.8123 6.72162 14.8123 8.79312C14.8123 10.8661 10.2748 13.3126 10.2748 13.3126" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                </button>
+                            </div>
+                            <div class="examples__block_before ellips7">
+                                <svg width="65" height="108" viewBox="0 0 65 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="-63" cy="128" r="127" stroke="#46A358" stroke-width="2"/>
+                                    </svg>
+                            </div>
+                            <div class="examples__block_before ellips8">
+                                <svg width="57" height="116" viewBox="0 0 57 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="-71" cy="128" r="127.5" stroke="#46A358"/>
+                                    </svg>
+                           </div>
+                        </div>
+                        <div class="examples__block">
+                            <div class="examples__image">
+                                <img src="./images/examples/image 15.png" alt="">
+                            </div>
+                            <div class="examples__content">
+                                <div class="examples__title">
+                                    Summer Cactus <br> & Succulents
+                                </div>
+                                <div class="examples__subtitle">
+                                    We are an online plant shop offering a wide range of cheap and trendy plants
+                                </div>
+                                <button class="examples__button">
+                                    Find more
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.8126 8.79419H3.56258" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M10.2748 4.27587C10.2748 4.27587 14.8123 6.72162 14.8123 8.79312C14.8123 10.8661 10.2748 13.3126 10.2748 13.3126" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                </button>
+                            </div>
+                            <div class="examples__block_before ellips7">
+                                <svg width="65" height="108" viewBox="0 0 65 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="-63" cy="128" r="127" stroke="#46A358" stroke-width="2"/>
+                                    </svg>
+                            </div>
+                            <div class="examples__block_before ellips8">
+                                <svg width="57" height="116" viewBox="0 0 57 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="-71" cy="128" r="127.5" stroke="#46A358"/>
+                                    </svg>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="blogposts">
+                <div class="blogposts__container">
+                    <div class="blogposts__title">
+                        Our Blog Posts
+                    </div>
+                    <div class="blogposts__subtitle">
+                        We are an online plant shop offering a wide range of cheap and trendy plants. 
+                    </div>
+                    <div class="blogposts__body">
+                        <div class="blogposts__block">
+                            <div class="blogposts__image">
+                                <img src="./images/blogposts/01.png" alt="">
+                            </div>
+                            <div class="blogposts__content">
+                                <div class="blogposts__date">
+                                    <a href="">September 12  I Read in 6 minutes</a>
+                                </div>
+                                <div class="blogposts__text">
+                                    Cactus & Succulent Care Tips
+                                </div>
+                                <div class="blogposts__subtext">
+                                    Cacti are succulents are easy care plants for any home or patio. 
+                                </div>   
+                                <a class="blogposts__button">
+                                    Read more
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.666656 4.81714C0.666656 4.56401 0.854759 4.35481 1.09881 4.3217L1.16666 4.31714L11.1667 4.31714C11.4428 4.31714 11.6667 4.541 11.6667 4.81714C11.6667 5.07027 11.4786 5.27947 11.2345 5.31257L11.1667 5.31714L1.16666 5.31714C0.890514 5.31714 0.666656 5.09328 0.666656 4.81714Z" fill="#3D3D3D"/>
+                                        <path d="M6.78066 1.15514C6.58498 0.960301 6.5843 0.64372 6.77914 0.448038C6.95627 0.270145 7.23401 0.253409 7.43006 0.398224L7.48624 0.446515L11.5196 4.46252C11.698 4.64017 11.7142 4.91891 11.5683 5.11496L11.5196 5.17111L7.48627 9.18778C7.29061 9.38264 6.97403 9.38198 6.77917 9.18632C6.60203 9.00844 6.58646 8.73063 6.7321 8.53519L6.78063 8.47921L10.458 4.81663L6.78066 1.15514Z" fill="#3D3D3D"/>
+                                    </svg> 
+                                </a> 
+                            </div>                   
+                         </div>
+                         <div class="blogposts__block">
+                            <div class="blogposts__image">
+                                <img src="./images/blogposts/02.png" alt="">
+                            </div>
+                            <div class="blogposts__content">
+                                <div class="blogposts__date">
+                                    <a href="">September 13  I Read in 2 minutes</a>
+                                </div>
+                                <div class="blogposts__text">
+                                    Top 10 Succulents for Your Home
+                                </div>
+                                <div class="blogposts__subtext">
+                                    Best in hanging baskets. Prefers medium to high light.
+                                </div>   
+                                <a class="blogposts__button">
+                                    Read more
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.666656 4.81714C0.666656 4.56401 0.854759 4.35481 1.09881 4.3217L1.16666 4.31714L11.1667 4.31714C11.4428 4.31714 11.6667 4.541 11.6667 4.81714C11.6667 5.07027 11.4786 5.27947 11.2345 5.31257L11.1667 5.31714L1.16666 5.31714C0.890514 5.31714 0.666656 5.09328 0.666656 4.81714Z" fill="#3D3D3D"/>
+                                        <path d="M6.78066 1.15514C6.58498 0.960301 6.5843 0.64372 6.77914 0.448038C6.95627 0.270145 7.23401 0.253409 7.43006 0.398224L7.48624 0.446515L11.5196 4.46252C11.698 4.64017 11.7142 4.91891 11.5683 5.11496L11.5196 5.17111L7.48627 9.18778C7.29061 9.38264 6.97403 9.38198 6.77917 9.18632C6.60203 9.00844 6.58646 8.73063 6.7321 8.53519L6.78063 8.47921L10.458 4.81663L6.78066 1.15514Z" fill="#3D3D3D"/>
+                                    </svg> 
+                                </a> 
+                            </div>                   
+                         </div>
+                         <div class="blogposts__block">
+                            <div class="blogposts__image">
+                                <img src="./images/blogposts/03.png" alt="">
+                            </div>
+                            <div class="blogposts__content">
+                                <div class="blogposts__date">
+                                    <a href="">September 14  I Read in 3 minutes</a>
+                                </div>
+                                <div class="blogposts__text">
+                                    Cacti & Succulent  Care Tips
+                                </div>
+                                <div class="blogposts__subtext">
+                                    Cacti and succulents thrive in containers and because most are..
+                                </div>   
+                                <a class="blogposts__button">
+                                    Read more
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.666656 4.81714C0.666656 4.56401 0.854759 4.35481 1.09881 4.3217L1.16666 4.31714L11.1667 4.31714C11.4428 4.31714 11.6667 4.541 11.6667 4.81714C11.6667 5.07027 11.4786 5.27947 11.2345 5.31257L11.1667 5.31714L1.16666 5.31714C0.890514 5.31714 0.666656 5.09328 0.666656 4.81714Z" fill="#3D3D3D"/>
+                                        <path d="M6.78066 1.15514C6.58498 0.960301 6.5843 0.64372 6.77914 0.448038C6.95627 0.270145 7.23401 0.253409 7.43006 0.398224L7.48624 0.446515L11.5196 4.46252C11.698 4.64017 11.7142 4.91891 11.5683 5.11496L11.5196 5.17111L7.48627 9.18778C7.29061 9.38264 6.97403 9.38198 6.77917 9.18632C6.60203 9.00844 6.58646 8.73063 6.7321 8.53519L6.78063 8.47921L10.458 4.81663L6.78066 1.15514Z" fill="#3D3D3D"/>
+                                    </svg> 
+                                </a> 
+                            </div>                   
+                         </div>
+                         <div class="blogposts__block">
+                            <div class="blogposts__image">
+                                <img src="./images/blogposts/03.png" alt="">
+                            </div>
+                            <div class="blogposts__content">
+                                <div class="blogposts__date">
+                                    <a href="">September 15  I Read in 2 minutes</a>
+                                </div>
+                                <div class="blogposts__text">
+                                    Best Houseplants  Room by Room
+                                </div>
+                                <div class="blogposts__subtext">
+                                    The benefits of houseplants are endless. In addition to..
+                                </div>   
+                                <a class="blogposts__button">
+                                    Read more
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.666656 4.81714C0.666656 4.56401 0.854759 4.35481 1.09881 4.3217L1.16666 4.31714L11.1667 4.31714C11.4428 4.31714 11.6667 4.541 11.6667 4.81714C11.6667 5.07027 11.4786 5.27947 11.2345 5.31257L11.1667 5.31714L1.16666 5.31714C0.890514 5.31714 0.666656 5.09328 0.666656 4.81714Z" fill="#3D3D3D"/>
+                                        <path d="M6.78066 1.15514C6.58498 0.960301 6.5843 0.64372 6.77914 0.448038C6.95627 0.270145 7.23401 0.253409 7.43006 0.398224L7.48624 0.446515L11.5196 4.46252C11.698 4.64017 11.7142 4.91891 11.5683 5.11496L11.5196 5.17111L7.48627 9.18778C7.29061 9.38264 6.97403 9.38198 6.77917 9.18632C6.60203 9.00844 6.58646 8.73063 6.7321 8.53519L6.78063 8.47921L10.458 4.81663L6.78066 1.15514Z" fill="#3D3D3D"/>
+                                    </svg> 
+                                </a> 
+                            </div>                   
+                         </div>
+                    </div>
+                </div>
+            </section>
+            <section class="join">
+                <div class="join__container">
+                    <div class="join__body">
+                        <div class="join__block">
+                            <div class="join__image">
+                                <div class="join__top">
+                                    <img src="./images/join/top.png" alt="">
+                                </div>
+                                <div class="join__bottom">
+                                    <img src="./images/join/bottom.png" alt="">
+                                </div>
+                                <div class="join__image_shadow">
+                                    <img src="./images/join/Ellipse 10 (4).png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="join_text">
+                                    Garden Care
+                                </div>
+                                <div class="join__subtext">
+                                    We are an online plant shop offering a wide range of cheap and trendy plants.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="join__line">
+                            <span></span>
+                        </div>
+                        <div class="join__block">
+                            <div class="join__image">
+                               <img src="./images/join/second.png" alt="">
+                               <div class="join__image_shadow">
+                                <img src="./images/join/Ellipse 10 (4).png" alt="">
+                            </div>
+                            </div>
+                            <div>
+                                <div class="join_text">
+                                    Plant Renovation
+                                </div>
+                                <div class="join__subtext">
+                                    We are an online plant shop offering a wide range of cheap and trendy plants.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="join__line">
+                            <span></span>
+                        </div>
+                        <div class="join__block">
+                            <div class="join__image image_different">
+                               <img src="./images/join/third.png" alt="" class="image_different">
+                               <div class="join__image_shadow2">
+                                   <img src="./images/join/Ellipse 10 (4).png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="join_text">
+                                    Watering Graden
+                                </div>
+                                <div class="join__subtext">
+                                    We are an online plant shop offering a wide range of cheap and trendy plants.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="join__email_block">
+                            <div class="join__email_title">
+                                Would you like to join newsletters?
+                            </div>
+                            <div class="join__email_form">
+                                <input type="email" placeholder="enter your email address..." class="join__email_input">
+                                <button class="join__email_button">Join</button>
+                            </div>
+                            <div class="error">Email is invalid</div>
+                            <div class="join__email_text">
+                                We usually post offers and challenges in newsletter. We’re your online houseplant destination. We offer a wide range of houseplants and accessories shipped directly from our (green)house to yours! 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__address">
+                    <div class="footer__address_logo">
+                        <a href=""><img src="./images/header/Group (7).png" alt=""></a>
+                    </div>
+                    <div class="footer__address_block">
+                        <span class="footer__address_icon">
+                            <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.09184 7.92531C9.09184 6.77425 8.15914 5.84155 7.00808 5.84155C5.85787 5.84155 4.92517 6.77425 4.92517 7.92531C4.92517 9.07552 5.85787 10.0082 7.00808 10.0082C8.15914 10.0082 9.09184 9.07552 9.09184 7.92531Z" stroke="#46A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.99959 16.5C4.58457 16.5 0.75 12.2989 0.75 7.8322C0.75 4.33539 3.54758 1.5 6.99959 1.5C10.4516 1.5 13.25 4.33539 13.25 7.8322C13.25 12.2989 9.41543 16.5 6.99959 16.5Z" stroke="#46A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </span>
+                        <a href="" class="join__subtext">
+                            70 West Buckingham Ave. <br> Farmingdale, NY 11735
+                        </a>
+                    </div>
+                    <div class="footer__address_block">
+                        <span class="footer__address_icon">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.6208 6.51587C13.6208 6.51587 10.9457 9.72639 8.98919 9.72639C7.03347 9.72639 4.32837 6.51587 4.32837 6.51587" stroke="#46A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.0434 8.97404C1.0434 3.27562 3.02753 1.37671 8.97991 1.37671C14.9323 1.37671 16.9164 3.27562 16.9164 8.97404C16.9164 14.6716 14.9323 16.5714 8.97991 16.5714C3.02753 16.5714 1.0434 14.6716 1.0434 8.97404Z" stroke="#46A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                        </span>
+                        <a href="" class="join__subtext">
+                            contact@greenshop.com
+                        </a>
+                    </div>
+                    <div href="" class="footer__address_block">
+                        <span class="footer__address_icon">
+                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.9604 1.29175C15.0446 1.63425 17.4813 4.06758 17.8279 7.15175" stroke="#46A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.9604 4.24414C13.4363 4.53081 14.5896 5.68497 14.8771 7.16081" stroke="#46A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.41708 12.5825C0.668758 6.83352 1.48616 4.20096 2.09213 3.35263C2.16997 3.21552 4.08873 0.343233 6.1455 2.02839C11.2507 6.23288 4.78759 5.63843 9.0745 9.92607C13.3623 14.2128 12.7669 7.74996 16.9716 12.8541C18.6568 14.9117 15.7844 16.8303 15.6482 16.9073C14.7998 17.5141 12.1663 18.3315 6.41708 12.5825Z" stroke="#46A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </span>
+                        <a href="tel:+88 01911 717 490" class="join__subtext">
+                            +88 01911 717 490
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__body">
+                    <div class="footer__body_block">
+                        <div class="footer__body_title">
+                            My Account
+                        </div>
+                        <div class="footer__links">
+                            <a href="">My Account</a>
+                        </div>
+                        <div class="footer__links">
+                            <a href="">Our stores</a>
+                        </div>
+                        <div class="footer__links">
+                            <a href="">Contact us</a>
+                        </div>
+                        <div class="footer__links">
+                            <a href="">Carier</a>
+                        </div>
+                        <div class="footer__links">
+                            <a href="">Specials</a>
+                        </div> 
+                    </div>
+                    <div class="footer__body_block">
+                        <div class="footer__body_title">
+                            Help & Guide
+                        </div>
+                        <div class="footer__links">
+                            <a href="">Help Center</a>
+                        </div>
+                        <div class="footer__links">
+                            <a href=""> How to Buy</a>
+                        </div>
+                        <div class="footer__links">
+                            <a href="">Shipping & Delivery</a>
+                        </div>
+                        <div class="footer__links">
+                            <a href="">Product Policy</a>
+                        </div>
+                        <div class="footer__links">
+                            <a href="">How to Return</a>
+                        </div> 
+                    </div>
+                    <div class="footer__body_block">
+                        <div class="footer__body_title">
+                            Catrgories
+                        </div>
+                        <div class="footer__links">
+                            <a href="">House Plants</a>
+                        </div>
+                        <div class="footer__links">
+                            <a href="">Potter Plants</a>
+                        </div>
+                        <div class="footer__links">
+                            <a href="">Seeds</a>
+                        </div>
+                        <div class="footer__links">
+                            <a href="">Small Plants</a>
+                        </div>
+                        <div class="footer__links">
+                            <a href="">Accessories</a>
+                        </div> 
+                    </div>
+                    <div class="footer__body_socials">
+                        <div class="footer__body_title">Social Media</div>
+                        <div class="footer__body_icons">
+                            <a href=""><img src="./images/footer/Facebook.png" alt=""></a>
+                            <a href=""><img src="./images/footer/Instagram.png" alt=""></a>
+                            <a href=""><img src="./images/footer/Twitter.png" alt=""></a>
+                            <a href=""><img src="./images/footer/Linkedin (1).png" alt=""></a>
+                            <a href=""><img src="./images/footer/Union.png" alt=""></a>
+                        </div>
+                        <div class="footer__body_title">We Accept</div>
+                        <div class="footer__body_accepted">
+                            <a href=""><img src="./images/join/accepted.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="footer__bottom">
+                    © 2021 GreenShop. All Rights Reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./script.js"></script>
+    <script src="./login.js"></script>
+    <script src="./filterSort.js"></script>
+</body>
+</html>

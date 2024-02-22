@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>account</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <nav class="header__nav">
+                    <div class="header__logo">
+                        <img src="./images/header/Group (7).png" alt="">
+                    </div>
+                    <ul class="header__menu">
+                        <li class="header__list homePage" ><a href="">Home</a></li>
+                        <li class="header__list"><a href="./shop.html">Shop</a></li>
+                        <li class="header__list"><a href="./address.html">Plant Care</a></li>
+                        <li class="header__list"><a href="./account.html">Blogs</a></li>
+                    </ul>
+                    <div class="header__buttons">
+                        <div class="header__search">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.5726 16.0029C10.5755 19.1865 4.988 18.3056 2.02842 14.6542C-0.828088 11.129 -0.64944 6.04347 2.44943 2.82482C5.65137 -0.500594 10.6854 -0.944524 14.3346 1.78337C15.642 2.76051 16.6183 4.00364 17.2542 5.50838C17.8938 7.02186 18.0881 8.59654 17.8663 10.2205C17.6452 11.837 17 13.2775 15.9499 14.6217C16.0349 14.6773 16.1255 14.7173 16.1904 14.7822C17.3448 15.9311 18.4947 17.0843 19.6491 18.2331C19.9227 18.5054 20.0589 18.8225 19.9776 19.2047C19.8165 19.9651 18.9107 20.2586 18.3298 19.7366C18.0575 19.4925 17.807 19.2234 17.5484 18.9649C16.6002 18.0177 15.6526 17.0699 14.7044 16.1227C14.665 16.0853 14.6238 16.0503 14.5726 16.0029ZM15.9605 8.98677C15.9705 5.12689 12.8529 2.00627 8.98261 2.00065C5.12292 1.99503 2.00781 5.09068 1.99094 8.94806C1.97408 12.8173 5.08544 15.9467 8.96762 15.9648C12.8117 15.9829 15.9505 12.8504 15.9605 8.98677Z" fill="#3D3D3D"/>
+                                </svg>
+                        </div>
+                        <div class="header__shopping-card">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.1567 20.25H9.89163C6.79003 20.25 4.26667 17.7267 4.26667 14.6251V8.85947C4.26667 5.9762 2.82958 3.30739 0.422521 1.72031C-0.00975775 1.43531 -0.129101 0.853876 0.155897 0.421598C0.440896 -0.0107278 1.02228 -0.130118 1.45465 0.154974C2.82874 1.06097 3.94351 2.2559 4.74067 3.63167C4.91293 3.82466 6.30202 5.29699 8.57919 5.29699H19.3748C22.3201 5.24191 24.6254 8.19769 23.8554 11.0406L22.6126 15.9939C21.9839 18.4998 19.7404 20.25 17.1567 20.25ZM5.90513 6.64234C6.06099 7.36238 6.14166 8.10483 6.14166 8.85947V14.6251C6.14166 16.6928 7.8239 18.375 9.89163 18.375H17.1567C18.8792 18.375 20.3748 17.2082 20.794 15.5376L22.0367 10.5844C22.4943 8.89509 21.1243 7.13931 19.3748 7.17198H8.57914C7.54926 7.17198 6.65283 6.94993 5.90513 6.64234ZM9.42289 22.8281C9.42289 22.1809 8.89822 21.6563 8.25102 21.6563C6.69609 21.7182 6.69745 23.9387 8.25102 24C8.89822 24 9.42289 23.4753 9.42289 22.8281ZM18.751 22.8281C18.751 22.1809 18.2263 21.6563 17.5791 21.6563C16.0242 21.7182 16.0255 23.9387 17.5791 24C18.2263 24 18.751 23.4753 18.751 22.8281ZM20.3123 9.98446C20.3123 9.46668 19.8925 9.04697 19.3748 9.04697H8.95414C7.71027 9.09647 7.71121 10.8729 8.95414 10.922H19.3748C19.8925 10.922 20.3123 10.5022 20.3123 9.98446Z" fill="#3D3D3D"/>
+                                </svg>                                
+                            <p class="header__counter">0</p>
+                        </div>
+                        <button class="header__login">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.1601 9.10057H7.12598" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.7212 6.67059L17.1612 9.10059L14.7212 11.5306" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.6342 5.35823C12.3592 2.3749 11.2425 1.29156 6.80082 1.29156C0.883322 1.29156 0.883322 3.21656 0.883322 8.9999C0.883322 14.7832 0.883322 16.7082 6.80082 16.7082C11.2425 16.7082 12.3592 15.6249 12.6342 12.6416" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            Login
+                        </button>
+                    </div>
+                </nav>
+                <div class="header__mobile">
+                    <div class="header__mobile_search">
+                        <span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52959 2.2436C5.50469 2.2436 2.24326 5.50244 2.24326 9.5207C2.24326 13.539 5.50469 16.7978 9.52959 16.7978C11.5376 16.7978 13.3546 15.9875 14.6732 14.675C15.9977 13.3566 16.8159 11.5347 16.8159 9.5207C16.8159 5.50244 13.5545 2.2436 9.52959 2.2436ZM0.833008 9.5207C0.833008 4.72204 4.72737 0.833344 9.52959 0.833344C14.3318 0.833344 18.2262 4.72204 18.2262 9.5207C18.2262 11.6706 17.4436 13.6389 16.149 15.1554L18.9595 17.9627C19.2351 18.2379 19.2353 18.6843 18.9601 18.9599C18.6849 19.2354 18.2384 19.2356 17.9629 18.9604L15.1497 16.1505C13.6343 17.4335 11.6719 18.2081 9.52959 18.2081C4.72737 18.2081 0.833008 14.3194 0.833008 9.5207Z" fill="#A5A5A5"/>
+                                </svg>
+                        </span>
+                        <input type="text" placeholder="Find your plants" class="header__mobile_input">
+                    </div>
+                    <div class="header__mobile_burger">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.2144 16.3926H4.28125" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9375 16.3934C13.9375 18.2651 14.5617 18.8884 16.4325 18.8884C18.3033 18.8884 18.9274 18.2651 18.9274 16.3934C18.9274 14.5218 18.3033 13.8984 16.4325 13.8984C14.5617 13.8984 13.9375 14.5218 13.9375 16.3934Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12.9951 6.77801H18.9274" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.27202 6.77677C9.27202 4.90595 8.64786 4.2818 6.77704 4.2818C4.9054 4.2818 4.28125 4.90595 4.28125 6.77677C4.28125 8.64841 4.9054 9.27175 6.77704 9.27175C8.64786 9.27175 9.27202 8.64841 9.27202 6.77677Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    </div>
+                    <ul class="header__mobile_menu">
+                        <a class="header__mobile_button">
+                            <img src="./images/header/cross.png" alt="">
+                        </a>
+                        <li class="header__mobile_list homePage"><a href="">Home</a></li>
+                        <li class="header__mobile_list"><a href="./shop.html">Shop</a></li>
+                        <li class="header__mobile_list"><a href="">Plant Care</a></li>
+                        <li class="header__mobile_list"><a href="">Blogs</a></li>
+                        <button class="header__login">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.1601 9.10057H7.12598" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.7212 6.67059L17.1612 9.10059L14.7212 11.5306" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.6342 5.35823C12.3592 2.3749 11.2425 1.29156 6.80082 1.29156C0.883322 1.29156 0.883322 3.21656 0.883322 8.9999C0.883322 14.7832 0.883322 16.7082 6.80082 16.7082C11.2425 16.7082 12.3592 15.6249 12.6342 12.6416" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            Login
+                        </button>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="account__container">
+                <div class="account__myAccount">
+                    <div class="account__myAccount_title">
+                        My Account
+                    </div>
+                    <a href="" class="account__lines account_active">
+                        <span class="account__icon">
+                            <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1.65385C4.61038 1.65385 3.48387 2.77313 3.48387 4.15385C3.48387 5.53456 4.61038 6.65385 6 6.65385C7.38962 6.65385 8.51613 5.53456 8.51613 4.15385C8.51613 2.77313 7.38962 1.65385 6 1.65385ZM2.32258 4.15385C2.32258 2.13588 3.96902 0.5 6 0.5C8.03098 0.5 9.67742 2.13588 9.67742 4.15385C9.67742 6.17181 8.03098 7.80769 6 7.80769C3.96902 7.80769 2.32258 6.17181 2.32258 4.15385Z" fill="#46A358"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.09963 10.5C2.47683 10.5 1.16129 11.8071 1.16129 13.4195C1.16129 13.5042 1.17686 13.5639 1.19319 13.5987C1.20697 13.6281 1.21879 13.6365 1.22865 13.6418C1.67991 13.8858 2.94511 14.3462 6 14.3462C9.05489 14.3462 10.3201 13.8858 10.7713 13.6418C10.7812 13.6365 10.793 13.6281 10.8068 13.5987C10.8231 13.5639 10.8387 13.5042 10.8387 13.4195C10.8387 11.8071 9.52317 10.5 7.90037 10.5H4.09963ZM0 13.4195C0 11.1699 1.83547 9.34616 4.09963 9.34616H7.90037C10.1645 9.34616 12 11.1699 12 13.4195C12 13.8325 11.8495 14.3725 11.3264 14.6553C10.6335 15.03 9.14689 15.5 6 15.5C2.85311 15.5 1.36654 15.03 0.673589 14.6553C0.150475 14.3725 0 13.8325 0 13.4195Z" fill="#46A358"/>
+                            </svg>
+                        </span>
+                        <p class="account__lines_logout">
+                            Account Details
+                        </p>
+                    </a>
+                    <a href="./address.html" class="account__lines">
+                        <span class="account__icon">
+                            <svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.20882 6.0835C6.40466 6.0835 5.75049 6.73766 5.75049 7.54266C5.75049 8.34683 6.40466 9.00016 7.20882 9.00016C8.01299 9.00016 8.66715 8.34683 8.66715 7.54266C8.66715 6.73766 8.01299 6.0835 7.20882 6.0835ZM7.20882 10.2502C5.71549 10.2502 4.50049 9.036 4.50049 7.54266C4.50049 6.0485 5.71549 4.8335 7.20882 4.8335C8.70216 4.8335 9.91715 6.0485 9.91715 7.54266C9.91715 9.036 8.70216 10.2502 7.20882 10.2502Z" fill="#727272"/>
+                                <mask id="mask0_51816_228" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="17">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.333496 0.666748H14.0831V16.9167H0.333496V0.666748Z" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask0_51816_228)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.20801 1.91675C4.10634 1.91675 1.58301 4.46425 1.58301 7.59425C1.58301 11.5767 6.26967 15.4567 7.20801 15.6634C8.14634 15.4559 12.833 11.5759 12.833 7.59425C12.833 4.46425 10.3097 1.91675 7.20801 1.91675ZM7.20801 16.9167C5.71301 16.9167 0.333008 12.2901 0.333008 7.59425C0.333008 3.77425 3.41717 0.666748 7.20801 0.666748C10.9988 0.666748 14.083 3.77425 14.083 7.59425C14.083 12.2901 8.70301 16.9167 7.20801 16.9167Z" fill="#727272"/>
+                                </g>
+                            </svg>
+                        </span>
+                        <p class="account__lines_text">
+                            Address
+                        </p>
+                    </a>
+                    <a href="" class="account__lines">
+                        <span class="account__icon">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.8646 15.1873H7.41669C5.0909 15.1873 3.19871 13.2951 3.19871 10.9693V6.64588C3.19871 4.48381 2.12108 2.48255 0.316103 1.29245C-0.00804932 1.07874 -0.0975409 0.642736 0.11617 0.318584C0.329881 -0.00560306 0.765845 -0.0951298 1.09007 0.118652C2.12045 0.798029 2.95638 1.69407 3.55414 2.72572C3.68332 2.87043 4.72495 3.97449 6.43253 3.97449H14.5278C16.7364 3.93319 18.4651 6.14963 17.8877 8.28147L16.9558 11.9958C16.4843 13.8749 14.802 15.1873 12.8646 15.1873ZM4.42734 4.98332C4.54421 5.52326 4.6047 6.08 4.6047 6.64588V10.9693C4.6047 12.5198 5.86616 13.7813 7.41669 13.7813H12.8646C14.1562 13.7813 15.2777 12.9064 15.592 11.6536L16.5239 7.93932C16.8671 6.67259 15.8397 5.35598 14.5278 5.38048H6.4325C5.66022 5.38048 4.98801 5.21398 4.42734 4.98332ZM7.06519 17.1205C7.06519 16.6352 6.67176 16.2418 6.18645 16.2418C5.02046 16.2882 5.02147 17.9533 6.18645 17.9993C6.67176 17.9993 7.06519 17.6059 7.06519 17.1205ZM14.06 17.1205C14.06 16.6352 13.6666 16.2418 13.1813 16.2418C12.0153 16.2882 12.0163 17.9533 13.1813 17.9993C13.6666 17.9993 14.06 17.6059 14.06 17.1205ZM15.2308 7.48948C15.2308 7.10121 14.9161 6.78648 14.5278 6.78648H6.71369C5.78096 6.8236 5.78166 8.15567 6.71369 8.19247H14.5278C14.9161 8.19247 15.2308 7.87774 15.2308 7.48948Z" fill="#727272"/>
+                                </svg>
+                        </span>
+                        <p class="account__lines_text">
+                            Orders
+                        </p>
+                    </a>
+                    <a href="" class="account__lines">
+                        <span class="account__icon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 15.1099C7.77222 15.1099 7.55261 15.0273 7.38147 14.8774C6.73511 14.3123 6.11194 13.7811 5.56213 13.3126L5.55933 13.3102C3.94739 11.9365 2.55542 10.7502 1.58691 9.58167C0.504272 8.27527 0 7.03662 0 5.68347C0 4.36877 0.450806 3.15588 1.26929 2.26807C2.09753 1.36975 3.23401 0.875 4.46973 0.875C5.39331 0.875 6.23914 1.16699 6.98364 1.7428C7.35938 2.03345 7.69995 2.38916 8 2.80408C8.30017 2.38916 8.64062 2.03345 9.01648 1.7428C9.76099 1.16699 10.6068 0.875 11.5304 0.875C12.766 0.875 13.9026 1.36975 14.7308 2.26807C15.5493 3.15588 16 4.36877 16 5.68347C16 7.03662 15.4958 8.27527 14.4132 9.58154C13.4447 10.7502 12.0529 11.9364 10.4412 13.3099C9.89038 13.7792 9.26624 14.3112 8.61841 14.8777C8.44739 15.0273 8.22766 15.1099 8 15.1099ZM4.46973 1.81226C3.4989 1.81226 2.60706 2.19971 1.95825 2.90332C1.2998 3.61755 0.937134 4.60486 0.937134 5.68347C0.937134 6.82153 1.36011 7.83936 2.30847 8.98364C3.2251 10.0897 4.5885 11.2516 6.16711 12.5969L6.17004 12.5994C6.72192 13.0697 7.34753 13.6029 7.99866 14.1722C8.65369 13.6018 9.28027 13.0677 9.83325 12.5967C11.4117 11.2513 12.775 10.0897 13.6917 8.98364C14.6399 7.83936 15.0629 6.82153 15.0629 5.68347C15.0629 4.60486 14.7002 3.61755 14.0417 2.90332C13.3931 2.19971 12.5011 1.81226 11.5304 1.81226C10.8192 1.81226 10.1663 2.03833 9.58972 2.48413C9.07593 2.88159 8.71802 3.38403 8.50818 3.7356C8.40027 3.91638 8.21033 4.02429 8 4.02429C7.78967 4.02429 7.59973 3.91638 7.49182 3.7356C7.2821 3.38403 6.92419 2.88159 6.41028 2.48413C5.83374 2.03833 5.18079 1.81226 4.46973 1.81226Z" fill="#727272"/>
+                                </svg>
+                        </span>
+                        <p class="account__lines_text">
+                             Wishlist
+                        </p>
+                    </a>
+                    <a href="" class="account__lines svg_stroke">
+                        <span class="account__icon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.1875 10.1404L6.43225 7.22368L8.99275 9.23368L11.1895 6.39868" stroke="inherit" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.7501 0.762451C14.5466 0.762451 15.1916 1.40745 15.1916 2.20395C15.1916 2.9997 14.5466 3.64545 13.7501 3.64545C12.9536 3.64545 12.3086 2.9997 12.3086 2.20395C12.3086 1.40745 12.9536 0.762451 13.7501 0.762451Z" stroke="inherit" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.5664 5.95179C14.6662 6.62304 14.7119 7.37904 14.7119 8.22729C14.7119 13.4308 12.9779 15.1648 7.77441 15.1648C2.57166 15.1648 0.836914 13.4308 0.836914 8.22729C0.836914 3.02454 2.57166 1.28979 7.77441 1.28979C8.60691 1.28979 9.35016 1.33404 10.0117 1.43004" stroke="inherit" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </span>
+                        <p class="account__lines_text">
+                             Reports
+                        </p>
+                    </a>
+                    <a href="" class="account__lines svg_stroke">
+                        <span class="account__icon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.90918 10.0933V1.0625" stroke="inherit" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.0962 7.89819L7.90917 10.0942L5.72217 7.89819" stroke="inherit" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.2775 4.44409C13.9617 4.69159 14.9375 5.69659 14.9375 9.69409C14.9375 15.0191 13.2043 15.0191 8 15.0191C2.79425 15.0191 1.0625 15.0191 1.0625 9.69409C1.0625 5.69659 2.0375 4.69159 4.7225 4.44409" stroke="inherit" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </span>
+                        <p class="account__lines_text">
+                             Downloads
+                        </p>
+                    </a>
+                    <a href="" class="account__lines svg_stroke">
+                        <span class="account__icon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 14.75C3.12918 14.75 1.2175 14.404 0.907644 12.6525C0.597792 10.901 2.58037 7.60806 3.19131 6.52135C5.23443 2.88806 6.62279 1.25 8 1.25C9.37721 1.25 10.7656 2.88806 12.8087 6.52135C13.4196 7.60806 15.4022 10.901 15.0924 12.6525C14.7833 14.404 12.8708 14.75 8 14.75Z" stroke="inherit" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 5.375V8.29625" stroke="inherit" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.99662 10.9211H8.00337" stroke="inherit" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </span>
+                        <p class="account__lines_text">
+                             Support
+                        </p>
+                    </a>
+                    <hr>
+                    <a href="" class="account__lines">
+                        <span class="account__icon">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.1592 9.1005H7.125" stroke="#46A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.7202 6.67041L17.1602 9.10041L14.7202 11.5304" stroke="#46A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.6333 5.35817C12.3583 2.37484 11.2416 1.2915 6.79997 1.2915C0.882468 1.2915 0.882468 3.2165 0.882468 8.99984C0.882468 14.7832 0.882468 16.7082 6.79997 16.7082C11.2416 16.7082 12.3583 15.6248 12.6333 12.6415" stroke="#46A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </span>
+                        <p class="account__lines_logout">
+                             Logout
+                        </p>
+                    </a>
+                </div>
+                <div class="account__right">
+                <form action="./index.html" class="account__personal_form">
+                    <div class="account__personal_information">
+                        <div class="account__title">
+                            Personal Information
+                        </div>
+                        <div class="account__flex">
+                            <div class="account__input fName">
+                                <div class="account__input_text">
+                                    First Name <span style="color: #F03800;">*</span>
+                                </div>
+                                <input type="text" class="account__name">
+                                <div class="error">
+                                    Please fill this field
+                                </div>
+                            </div>
+                            <div class="account__input lName">
+                                <div class="account__input_text">
+                                    Last name <span style="color: #F03800;">*</span>
+                                </div>
+                                <input type="text" class="account__Lname">
+                                <div class="error">
+                                    Please fill this field
+                                </div>
+                            </div>
+                            <div class="account__input acEmail">
+                                <div class="account__input_text">
+                                    Email address <span style="color: #F03800;">*</span>
+                                </div>
+                                <input type="email" class="account__email">
+                                <div class="error">
+                                    Please enter valid email address
+                                </div>
+                            </div>
+                            <div class="account__input accNum">
+                                <div class="account__input_text">
+                                    Phone Number <span style="color: #F03800;">*</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between;">
+                                    <button class="account__number_beginning">+998</button>
+                                    <input type="tel" class="account__number" style="width: 78%;">
+                                </div>
+                                <div class="error">
+                                    Please enter valid phone number
+                                </div>
+                            </div>
+                            <div class="account__input accUser">
+                                <div class="account__input_text">
+                                    Username <span style="color: #F03800;">*</span>
+                                </div>
+                                <input type="text" class="account__username">
+                                <div class="error">
+                                    Please enter valid Username
+                                </div>
+                            </div>
+                            <div class="account__profile">
+                                <div class="account__input_text">
+                                    Photo
+                                </div>
+                               <div style="display: flex; margin-top: 10px;">
+                                <div class="account__image">
+                                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="25" cy="25" r="25" fill="#FBFBFB"/>
+                                        <circle cx="25" cy="25" r="24.5" stroke="#EAEAEA"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.75 25C15.75 31.937 18.063 34.25 25 34.25C31.937 34.25 34.25 31.937 34.25 25C34.25 18.063 31.937 15.75 25 15.75C18.063 15.75 15.75 18.063 15.75 25Z" stroke="#46A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M23.5987 21.7842C23.5987 22.7572 22.8107 23.5452 21.8377 23.5452C20.8657 23.5452 20.0767 22.7572 20.0767 21.7842C20.0767 20.8112 20.8657 20.0232 21.8377 20.0232C22.8107 20.0232 23.5987 20.8112 23.5987 21.7842Z" stroke="#46A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M34.1203 27.6664C33.2393 26.7604 31.9933 24.9294 29.7043 24.9294C27.4153 24.9294 27.3653 28.9674 25.0293 28.9674C22.6923 28.9674 21.7513 27.5964 20.2283 28.3124C18.7063 29.0274 17.4663 31.8734 17.4663 31.8734" stroke="#46A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                </div>
+                                <button class="account__button_change">
+                                    Change
+                                </button>
+                                <button class="account__button_remove">
+                                    Remove
+                                </button>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="account__password">
+                        <div class="account__title">
+                            Password change
+                        </div>
+                            <div class="account__input current">
+                                <div class="account__input_text">
+                                    Current password
+                                </div>
+                                <div class="password__eye">
+                                    <input type="password" id="password" name="password" class="account__password">
+                                    <span class="Eye_hide eye">
+                                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.34984 12.7748C2.4915 11.5582 1.2915 9.72482 1.2915 8.11649C1.2915 5.38316 4.7415 2.03316 8.99984 2.03316C10.7415 2.03316 12.3582 2.59149 13.6582 3.45816" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.5414 5.17517C16.2839 6.11684 16.7164 7.1585 16.7164 8.11684C16.7164 10.8502 13.2581 14.2002 8.99977 14.2002C8.24144 14.2002 7.50061 14.0918 6.80811 13.9002" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.13804 9.97249C6.6422 9.48166 6.3647 8.81249 6.3672 8.11499C6.36387 6.66083 7.54054 5.47916 8.99554 5.47666C9.69554 5.47499 10.3672 5.75249 10.8622 6.24749" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M11.5912 8.58258C11.3962 9.65925 10.5537 10.5034 9.47705 10.7009" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.5762 1.54158L2.43115 14.6866" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <span class="Eye_show eye">
+                                        <img src="./images/header/eye.png" alt="">
+                                    </span>
+                                </div>
+                                <div class="error">
+                                    Password is invalid
+                                </div>
+                            </div>
+                            <div class="account__input NewPass">
+                                <div class="account__input_text">
+                                    New password
+                                </div>
+                                <div class="password__eye">
+                                    <input type="password" id="new" name="new" class="account__new">
+                                    <span class="Eye_hide1 eye">
+                                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.34984 12.7748C2.4915 11.5582 1.2915 9.72482 1.2915 8.11649C1.2915 5.38316 4.7415 2.03316 8.99984 2.03316C10.7415 2.03316 12.3582 2.59149 13.6582 3.45816" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.5414 5.17517C16.2839 6.11684 16.7164 7.1585 16.7164 8.11684C16.7164 10.8502 13.2581 14.2002 8.99977 14.2002C8.24144 14.2002 7.50061 14.0918 6.80811 13.9002" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.13804 9.97249C6.6422 9.48166 6.3647 8.81249 6.3672 8.11499C6.36387 6.66083 7.54054 5.47916 8.99554 5.47666C9.69554 5.47499 10.3672 5.75249 10.8622 6.24749" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M11.5912 8.58258C11.3962 9.65925 10.5537 10.5034 9.47705 10.7009" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.5762 1.54158L2.43115 14.6866" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <span class="Eye_show1 eye">
+                                        <img src="./images/header/eye.png" alt="">
+                                    </span>
+                                </div>
+                                <div class="error">
+                                    Password is invalid
+                                </div>
+                            </div>
+                            <div class="account__input confirm">
+                                <div class="account__input_text">
+                                    Confirm new password
+                                </div>
+                                <div class="password__eye">
+                                    <input type="password" id="confirm" name="confirm" class="account__confirm">
+                                    <span class="Eye_hide2 eye">
+                                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.34984 12.7748C2.4915 11.5582 1.2915 9.72482 1.2915 8.11649C1.2915 5.38316 4.7415 2.03316 8.99984 2.03316C10.7415 2.03316 12.3582 2.59149 13.6582 3.45816" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.5414 5.17517C16.2839 6.11684 16.7164 7.1585 16.7164 8.11684C16.7164 10.8502 13.2581 14.2002 8.99977 14.2002C8.24144 14.2002 7.50061 14.0918 6.80811 13.9002" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.13804 9.97249C6.6422 9.48166 6.3647 8.81249 6.3672 8.11499C6.36387 6.66083 7.54054 5.47916 8.99554 5.47666C9.69554 5.47499 10.3672 5.75249 10.8622 6.24749" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M11.5912 8.58258C11.3962 9.65925 10.5537 10.5034 9.47705 10.7009" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.5762 1.54158L2.43115 14.6866" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <span class="Eye_show2 eye">
+                                        <img src="./images/header/eye.png" alt="">
+                                    </span>
+                                </div>
+                                <div class="account__confirm_error error">
+                                    Password is invalid
+                                </div>
+                            </div>
+                            <input type="submit"  class="account__save_change" value="Save Change">
+                    </div>
+                </form>
+              </div>
+            </div>
+        </main>
+    </div>
+    <script src="./account.js"></script>
+</body>
+</html>

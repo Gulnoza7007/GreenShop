@@ -1,0 +1,163 @@
+.join{
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        background: #FBFBFB;
+        padding: 24px 0px;
+        @include media(900){
+            flex-wrap: wrap;
+        }
+    }
+    &__block{
+        width: 20.8%;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 24px;
+        @include media(1024){
+            padding: 0px 10px;
+        }
+        @include media(900){
+            width: 31%;
+            padding: 0px 15px;
+        }
+        @include media(405){
+            width: 100%;
+            flex-direction: row;
+        }
+    }
+    &_text{
+        font-family: 'Cera Pro';
+        font-weight: 700;
+        line-height: 94%;
+        color: $black3D;
+        margin: 18px 0px 9px 0px;
+        @include adaptive-value("font-size", 17, 13,1);
+    }
+    &__subtext{
+        font-family: 'Cera Pro';
+        font-weight: 400;
+        line-height: 157%;
+        color: $black72;
+
+        @include adaptive-value("font-size", 14,9.5,1);
+    }
+    &__line span{
+         display: block;
+         width: 1px;
+         height: 80%;
+         margin: 30px 4px;
+         background: rgba(70, 163, 88, 0.1);
+         @include media(405){
+            display: none;
+         }
+    }
+    &__email{
+        &_block{
+            width: 32%;
+            margin-left: 30px;
+            @include media(1024){
+                margin-left: 8px;
+                width: 35%;
+            }
+            @include media(900){
+                margin: 40px 0px 20px 0px;
+                width: 54%;
+                min-width: 290px;
+
+            }
+        }
+        &_title{
+            font-family: 'Cera Pro';
+            font-weight: 700;
+            line-height: 89%;
+            color: $black3D;
+            @include adaptive-value("font-size",18,14,1);
+        }
+        &_form{
+            display: flex;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06);
+            border-radius: 6px;
+            margin: 17px 0px;
+            & input{
+                font-family: 'Cera Pro';
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 114%;
+                color: #ACACAC;
+                padding: 11px;
+                width: 80%;
+                outline: none;
+            }
+            & button{
+                font-family: 'Cera Pro';
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 89%;
+                color: #FFFFFF;
+                padding: 0px 24px;
+                background-color: $green4;
+                border-radius: 0px 6px 6px 0px;
+                cursor: pointer;
+            }
+        }
+        &_text{
+            font-family: 'Cera Pro';
+            font-weight: 400;
+            line-height: 169%;
+            color: $black72;
+            @include adaptive-value("font-size",13, 10,1);
+        }
+    }
+    &__top{
+        margin-bottom: -6px;
+        margin-right: 8px;
+    }
+    &__image{
+        position: relative;
+        margin-left: 15px;
+        @include media(405){
+            margin-left: 0;
+            margin-right: 20px;
+        }
+        &_shadow{
+            position: absolute;
+            width: 74px;
+            height: 74px;
+            bottom: 0;
+            left: -15px;
+        }
+        &_shadow2{
+            position: absolute;
+            width: 74px;
+            height: 74px;
+            bottom: 0;
+            left: -5px;
+            @include media(405){
+                margin-left: -5px;
+            }
+        }
+    }
+}
+
+@include media(405){
+    .image_different{
+       margin-left: -5px;
+    }
+}
+
+.join__email_block{
+    &.invalid{
+        & .error{
+            display: block;
+        }
+        & input{
+            border: 1px solid red;
+        }
+    }
+    &.green{
+        & input{
+            border: 1px solid green;
+        }
+    }
+}

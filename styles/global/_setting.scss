@@ -1,0 +1,27 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    &.active{
+        overflow: hidden;
+        height: 100vh;
+    }
+}
+
+
+.wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+[class*="__container"] {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+
+    @include adaptive-value("padding-left", 100, 14, 1);
+    @include adaptive-value("padding-right", 100, 14, 1);
+}
